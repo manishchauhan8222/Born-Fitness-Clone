@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+    .navigation{
+        background-color: #968787;
+        height: 50px;
+        
+        
+    }
+    .born-icon{
+        background: url("bornlogo-white.svg"); background-color: transparent;
+    }
+    
+    .nav-point {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+    .search-container {
+        margin-left: 10px;
+    }
+    #search-input{
+        background-color: #968787;
+    }
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+        transition: 0.4s;
+    }
+    .offcanvas-menu {
+        position: fixed;
+        top: 0;
+        left: -250px; 
+        width: 250px;
+        height: 100%;
+        background-color: #968787;
+        box-shadow: 0 0 10px rgba(198, 175, 175, 0.1);
+        transition: 0.3s;
+    }
+    .offcanvas-menu ul {
+        list-style: none;
+        padding: 20px;
+    }
+    .offcanvas-menu li {
+        font-family: 'PT Sans', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .offcanvas-menu.show {
+        left: 0;
+    }
+    .search-container input.show {
+        display: block;
+    }
+    .search-container input{
+        width: 150px;
+    }
+}
