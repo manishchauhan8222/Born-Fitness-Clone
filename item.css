@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+
+.container {
+    display: flex;
+    background-color: #a79c9c2e;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+
+
+
+
+}
+
+.left {
+    width: 30%;
+    background-color: white;
+
+}
+
+.image {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: auto;
+    height: 34vw;
+}
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.cart {
+    width: 46%;
+    background-color: #ff9f00;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.cart img {
+    width: 25%;
+}
+
+.buy {
+    width: 46%;
+    background-color: #ff9f00;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buy img {
+    width: 25%;
+}
+
+.right {
+    width: 50%;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.tag {
+    font-size: 18px;
+    color: #aa6e6e;
+    margin: 10px;
+
+}
+
+.extra {
+    font-size: 18px;
+    margin: 10px;
+    color: #f91717;
+}
+
+.price {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.offers {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.offer {
+    font-size: 18px;
+    list-style: none;
+    margin: 10px;
+}
+
+
+/* responsive */
+@media only screen and (max-width:600px) {
+    .container {
+        display: grid;
+
+    }
+
+    .left {
+        width: 70%;
+        margin: 36px auto 0 auto;
+    }
+
+    .image img {
+        width: auto;
+        height: 40vw;
+    }
+
+    .right {
+        width: 70%;
+        margin: 0px auto;
+    }
+
+    .heading {
+        font-size: 4vw;
+    }
+
+    .tag {
+
+        font-size: 4vw;
+    }
+
+    .extra {
+
+        font-size: 4.5;
+    }
+
+    .price {
+
+        font-size: 6vw;
+    }
+
+    .offer {
+        font-size: 3.5vw;
+    }
+
+
+}
