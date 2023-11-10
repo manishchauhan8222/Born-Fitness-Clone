@@ -128,19 +128,14 @@
         font-size: 27px;
     }
 
-    .footer-left span input {
-        width: 71%;
-    }
+   
 
     .footer-left span {
         margin: auto;
     }
 
 
-    .footer-left span input {
-        width: 71%;
-        width: 63%;
-    }
+    
 
 
     .social {
@@ -316,13 +311,7 @@
         margin: 10px auto 20px auto;
     }
 
-    .footer-left span input {
-        font-size: 13px;
-        padding: 8px 8px 5px 6px;
-        border: 1px solid black;
-        outline: none;
-
-    }
+   
 
     .social {
         margin-top: 15px;
@@ -585,13 +574,10 @@
         justify-content: center;
     }
 
-    .footer-left span input {
-
-        width: 65%;
-    }
+   
 
     .footer-heading {
-        font-size: 29px;
+        font-size: 22px;
     }
 
     .content6 {
