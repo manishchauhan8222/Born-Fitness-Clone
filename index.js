@@ -41,47 +41,76 @@ document.addEventListener('DOMContentLoaded', function () {
             if (selectedItem) {
                 searchInput.value = selectedItem.textContent;
                 searchSuggestions.style.display = 'none';
-                
-                if (searchInput.value.toLowerCase()==='multivitamin'){
-                    window.location.href='mutlivitamin.html';
-                    searchInput.value="";
+
+                if (searchInput.value.toLowerCase() === 'multivitamin') {
+                    window.location.href = 'mutlivitamin.html';
+                    searchInput.value = "";
                 }
-                else if(searchInput.value.toLowerCase()==='protein'){
-                    window.location.href = 'protein_page.html'; 
-                    searchInput.value="";
+                else if (searchInput.value.toLowerCase() === 'protein') {
+                    window.location.href = 'protein_page.html';
+                    searchInput.value = "";
                 }
-                else if(searchInput.value.toLowerCase()==='creatine'){
-                    window.location.href="creatine.html";
-                    searchInput.value="";
+                else if (searchInput.value.toLowerCase() === 'creatine') {
+                    window.location.href = "creatine.html";
+                    searchInput.value = "";
                 }
-                else if(searchInput.value.toLowerCase()==='mass gainer'){
-                    window.location.href="gainer.html";
-                    searchInput.value="";
+                else if (searchInput.value.toLowerCase() === 'mass gainer') {
+                    window.location.href = "gainer.html";
+                    searchInput.value = "";
                 }
-                else if(searchInput.value.toLowerCase()==='max strength'){
-                    window.location.href=" max-strength.html";
-                    searchInput.value="";
+                else if (searchInput.value.toLowerCase() === 'max strength') {
+                    window.location.href = " max-strength.html";
+                    searchInput.value = "";
                 }
-                else if(searchInput.value.toLowerCase()==='whey'){
-                    window.location.href="whey.html";
-                    searchInput.value="";
+                else if (searchInput.value.toLowerCase() === 'whey') {
+                    window.location.href = "whey.html";
+                    searchInput.value = "";
                 }
-                // else if(searchInput.value.toLowerCase()==='mass gainer'){
-                //     window.location.href="gainer.html";
-                //     searchInput.value="";
-                // }
-                // else if(searchInput.value.toLowerCase()==='mass gainer'){
-                //     window.location.href="gainer.html";
-                //     searchInput.value="";
-                // }
+                else if (searchInput.value.toLowerCase() === 'isolate') {
+                    window.location.href = "isolate.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'cuts') {
+                    window.location.href = "cuts.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'testosterone') {
+                    window.location.href = "test.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'weight loss') {
+                    window.location.href = "weight.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'massage gun') {
+                    window.location.href = "massage.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'fish oil') {
+                    window.location.href = "fish.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'peanut butter') {
+                    window.location.href = "peanut.html ";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'yoga block') {
+                    window.location.href = "yoga.html";
+                    searchInput.value = "";
+                }
+                else if (searchInput.value.toLowerCase() === 'speed roller') {
+                    window.location.href = "speed.html";
+                    searchInput.value = "";
+                }
 
 
-               
 
 
-                
 
-                
+
+
+
+
             }
         }
     });
@@ -91,28 +120,64 @@ document.addEventListener('DOMContentLoaded', function () {
             searchSuggestions.style.display = 'none';
             if (searchInput.value.toLowerCase() === 'multivitamin') {
                 window.location.href = 'mutlivitamin.html';
-                searchInput.value="";
+                searchInput.value = "";
             } else if (searchInput.value.toLowerCase() === 'protein') {
-                window.location.href = 'protein_page.html'; 
-                searchInput.value="";
+                window.location.href = 'protein_page.html';
+                searchInput.value = "";
             }
-            else if(searchInput.value.toLowerCase()==='creatine'){
-                window.location.href="creatine.html";
-                searchInput.value="";
+            else if (searchInput.value.toLowerCase() === 'creatine') {
+                window.location.href = "creatine.html";
+                searchInput.value = "";
             }
-            else if(searchInput.value.toLowerCase()==='mass gainer'){
-                window.location.href="gainer.html";
-                searchInput.value="";
+            else if (searchInput.value.toLowerCase() === 'mass gainer') {
+                window.location.href = "gainer.html";
+                searchInput.value = "";
             }
-            else if(searchInput.value.toLowerCase()==='max strength'){
-                window.location.href=" max-strength.html";
-                searchInput.value="";
+            else if (searchInput.value.toLowerCase() === 'max strength') {
+                window.location.href = " max-strength.html";
+                searchInput.value = "";
             }
-            else if(searchInput.value.toLowerCase()==='whey'){
-                window.location.href="whey.html";
-                searchInput.value="";
+            else if (searchInput.value.toLowerCase() === 'whey') {
+                window.location.href = "whey.html";
+                searchInput.value = "";
             }
-            
+            else if (searchInput.value.toLowerCase() === 'isolate') {
+                window.location.href = "isolate.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'cuts') {
+                window.location.href = "cuts.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'testosterone') {
+                window.location.href = "test.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'weight loss') {
+                window.location.href = "weight.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'massage gun') {
+                window.location.href = "massage.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'fish oil') {
+                window.location.href = "fish.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'peanut butter') {
+                window.location.href = "peanut.html ";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'yoga block') {
+                window.location.href = "yoga.html";
+                searchInput.value = "";
+            }
+            else if (searchInput.value.toLowerCase() === 'speed roller') {
+                window.location.href = "speed.html";
+                searchInput.value = "";
+            }
+
         }
     }
 
@@ -165,3 +230,20 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburgerMenu.style.display = 'none';
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const signUp = document.querySelector('.signup');
+    const signupEmail = document.getElementById('email');
+    signupEmail.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); 
+            signupEmail.value = "";
+        }
+    })
+    signUp.addEventListener('click',function(event){
+        event.preventDefault(); 
+        signupEmail.value="";
+    })
+
+})
