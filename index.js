@@ -235,15 +235,36 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const signUp = document.querySelector('.signup');
     const signupEmail = document.getElementById('email');
+
+
+
     signupEmail.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            event.preventDefault(); 
+            event.preventDefault();
             signupEmail.value = "";
+
         }
     })
-    signUp.addEventListener('click',function(event){
-        event.preventDefault(); 
-        signupEmail.value="";
+    signUp.addEventListener('click', function (event) {
+        event.preventDefault();
+        signupEmail.value = "";
+
     })
 
+    const searchIconFooter = document.querySelector('.fa-sharp'); // Select the footer search icon
+    const footerEmailInput = document.getElementById('email'); // Select the footer input field
+
+    searchIconFooter.addEventListener('click', function (event) {
+        event.preventDefault();
+        footerEmailInput.value = ''; // Clear the footer input field value
+    });
+
+    footerEmailInput.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            footerEmailInput.value = ''; // Clear the footer input field value
+        }
+    });
+
 })
+

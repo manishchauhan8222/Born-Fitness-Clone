@@ -1,165 +1,245 @@
-* {
-    margin: 0;
+:root {
+    --box-color: linear-gradient(to bottom, #e6f7ff, #005580);
+}
+
+body {}
+
+
+
+.sub-container {
+    width: 80%;
+
+    margin: auto;
+}
+
+.sub-search {
+    width: 100%;
+}
+
+.sub-search #email {
+    width: 90%;
     padding: 0;
-    font-family: Roboto, Arial, sans-serif;
-    letter-spacing: 0;
+    outline: none;
 }
 
+.sub-search-heading {
+    font-size: 36px;
+    font-weight: 720;
+    font-size: 41px;
+    font-weight: 701;
+    letter-spacing: 0.2rem;
+    margin: 45px auto;
+    color: #1a1e24;
+}
 
-.container {
+.sub-search span {
+    width: 100%;
+    outline: 1px solid black;
+    padding: 18px;
+
+}
+
+.sub-content-left-img img {
+    width: 100%;
+    height: 90vh;
+}
+
+.sub-content-item {
+    margin-top: 66px;
+}
+
+.sub-content-tags {
     display: flex;
-    background-color: #a79c9c2e;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-
-
-
-
-
+    margin: 23px 34px;
 }
 
-.left {
-    width: 30%;
-    background-color: white;
-
-}
-
-.image {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-.image img {
-    width: auto;
-    height: 34vw;
-}
-
-.two {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 16px;
-
-}
-
-.cart {
-    width: 46%;
-    background-color: #ff9f00;
+.sub-content-tag {
+    background-color: #02ffd2;
+    padding: 3px 8px;
     font-size: 11px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    cursor: pointer;
-
+    font-weight: 600;
+    margin-right: 15px;
+    border-radius: 3px;
 }
 
-.cart img {
-    width: 25%;
-}
-
-.buy {
-    width: 46%;
-    background-color: #ff9f00;
-    font-size: 11px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+.sub-content-tag:hover {
+    background-color: yellow;
     cursor: pointer;
 }
 
-.buy img {
-    width: 25%;
-}
-
-.right {
-    width: 50%;
-}
-
-.heading {
+.sub-content-text h1 {
     font-size: 25px;
-    font-weight: lighter;
-    margin: 10px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #1a1e24;
 }
 
-.tag {
+
+.sub-content-text p {
+    color: #1a1e24;
     font-size: 18px;
-    color: #aa6e6e;
-    margin: 10px;
-
+    margin-top: 11px;
 }
 
-.extra {
+.sub-content-button {
+    margin-left: 23px;
+    margin-top: 30px;
+}
+
+.sub-content-button span {
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
-    margin: 10px;
-    color: #f91717;
+    font-style: italic;
+    color: #1a1e24;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    box-shadow: inset 0 -0.35em 0 #f8ff31;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.price {
-    font-size: 22px;
-    margin: 10px;
+.sub-content-text {
+    margin-left: 23px;
 }
 
-.offers {
-    font-size: 18px;
-    font-weight: bolder;
-    margin: 10px;
+.sub-content-left {
+    margin-bottom: 142px;
+    border: 3px solid #f4f7f9;
 }
 
-.offer {
-    font-size: 18px;
-    list-style: none;
-    margin: 10px;
+.sub-content-right {
+    border: 3px solid #f4f7f9;
 }
 
 
-/* responsive */
-@media only screen and (max-width:600px) {
-    .container {
-        display: grid;
 
+/* resposive */
+@media screen and (max-width:1200px) {
+    .sub-container {
+        width: 95%;
     }
 
-    .left {
-        width: 70%;
-        margin: 36px auto 0 auto;
+    .sub-content-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 
-    .image img {
-        width: auto;
-        height: 40vw;
+    .sub-content-right {
+        width: 40%;
     }
 
-    .right {
-        width: 70%;
-        margin: 0px auto;
+    .sub-content-left {
+        width: 45%;
+        margin-bottom: 0;
     }
 
-    .heading {
-        font-size: 4vw;
+    .sub-content-left-img img {
+        height: 100%;
     }
 
-    .tag {
-
-        font-size: 4vw;
+    .sub-content-text h1 {
+        font-size: 23px;
     }
 
-    .extra {
-
-        font-size: 4.5;
+    .sub-content-right {
+        width: 45%;
+        margin-bottom: 0;
     }
 
-    .price {
+    .sub-content-tags {
 
-        font-size: 6vw;
+        margin: 23px 9px;
     }
 
-    .offer {
-        font-size: 3.5vw;
+}
+
+@media screen and (max-width:768px) {
+
+    .sub-search span {
+        padding: 15px 9px;
+    }
+
+    .sub-search-heading {
+        font-size: 28px;
+    }
+
+    .navigation2 {
+        margin-top: -100px;
+    }
+
+    .sub-content2 {
+        margin-top: 100px;
     }
 
 
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    .sub-search-heading {
+        font-size: 23px;
+    }
+
+
+
+
+    .sub-search-heading {
+        font-weight: 600;
+    }
+
+    .sub-search #email {
+        padding: 0;
+        width: 80%;
+        outline: none;
+    }
+
+    .sub-search-heading {
+        margin-left: 35px;
+    }
+
+
+    .sub-search #email {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+.sub-content-item{
+    display: grid;
+}
+
+    .sub-content-left {
+
+        margin-bottom: 53px;
+        width: 100%;
+    }
+
+    .sub-content-right {
+
+        margin-bottom: 53px;
+        width: 100%;
+    }
+
+
+    .sub-content-text h1 {
+
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .sub-content-text p {
+
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .sub-search span {
+        padding: 15px 0px;
+    }
 }
