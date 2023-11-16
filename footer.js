@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (searchIconFooter && footerEmailInput) {
         searchIconFooter.addEventListener('click', function (event) {
-            event.preventDefault();
+            // event.preventDefault();
             console.log(footerEmailInput.value)
             footerEmailInput.value = '';
         });
 
         footerEmailInput.addEventListener('keypress', function (event) {
             if (event.key === 'Enter') {
-                event.preventDefault();
+                // event.preventDefault();
                 console.log(footerEmailInput.value)
                 footerEmailInput.value = '';
             }
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     subInput.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
 
-            event.preventDefault();
+            // event.preventDefault();
             console.log(subInput.value)
             subInput.value = "";
             notValidMessage.style.display = 'none';
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     subButton.addEventListener('click', function (event) {
 
-        event.preventDefault();
+        // event.preventDefault();
         console.log(subInput.value)
         subInput.value = "";
         notValidMessage.style.display = 'none';

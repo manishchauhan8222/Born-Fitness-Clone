@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.key === 'Enter') {
             const enteredEmail = signupEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
-                event.preventDefault();
+                // event.preventDefault();
                 console.log(signupEmail.value)
                 signupEmail.value = "";
                 notValidMessage.style.display = 'none';
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
     signUp.addEventListener('click', function (event) {
         const enteredEmail = signupEmail.value.trim();
         if (isValidEmail(enteredEmail)) {
-            event.preventDefault();
+            // event.preventDefault();
             console.log(signupEmail.value)
             signupEmail.value = "";
             notValidMessage.style.display = 'none';
@@ -277,14 +277,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const footerEmailInput = document.getElementById('comment-box');
 
     searchIconFooter.addEventListener('click', function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         console.log(footerEmailInput.value)
         footerEmailInput.value = '';
     });
 
     footerEmailInput.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            event.preventDefault();
+            // event.preventDefault();
             console.log(footerEmailInput.value)
             footerEmailInput.value = '';
         }
@@ -369,22 +369,22 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = "index.html";
         });
     });
-    const searchIconFooter = document.querySelector('.footer-search');
-    const footerEmailInput = document.getElementById('comment-box');
+    // const searchIconFooter = document.querySelector('.footer-search');
+    // const footerEmailInput = document.getElementById('comment-box');
 
-    searchIconFooter.addEventListener('click', function (event) {
-        event.preventDefault();
-        console.log(footerEmailInput.value)
-        footerEmailInput.value = '';
-    });
+    // searchIconFooter.addEventsListener('click', function (event) {
+    //     // event.preventDefault();
+    //     console.log(footerEmailInput.value)
+    //     footerEmailInput.value = '';
+    // });
 
-    footerEmailInput.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            console.log(footerEmailInput.value)
-            footerEmailInput.value = '';
-        }
-    });
+    // footerEmailInput.addEventListener('keypress', function (event) {
+    //     if (event.key === 'Enter') {
+    //         // event.preventDefault();
+    //         console.log(footerEmailInput.value)
+    //         footerEmailInput.value = '';
+    //     }
+    // });
 
 });
 
