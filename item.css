@@ -2,7 +2,7 @@
     --box-color: linear-gradient(to bottom, #e6f7ff, #005580);
 }
 
-body {}
+
 
 
 
@@ -37,6 +37,9 @@ body {}
     outline: 1px solid black;
     padding: 18px;
 
+}
+.fa-sharp{
+    cursor: pointer;
 }
 
 .sub-content-left-img img {
@@ -79,6 +82,7 @@ body {}
     color: #1a1e24;
     font-size: 18px;
     margin-top: 11px;
+    line-height: 2rem;
 }
 
 .sub-content-button {
@@ -111,6 +115,68 @@ body {}
 
 .sub-content-right {
     border: 3px solid #f4f7f9;
+}
+
+.sub-signUp {
+    background: linear-gradient(to bottom, #e6f7ff, #91cdec);
+    margin: 106px auto;
+}
+
+.sub-signUp-text h1 {
+    font-size: 51px;
+    font-weight: 600;
+    margin: 10px auto 20px auto;
+    color: #1a1e24;
+}
+
+.sub-signUp-text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 71px;
+    padding-bottom: 40px;
+    padding-left: 107px;
+    padding-right: 107px;
+}
+
+.sub-signUp-input {
+    padding-left: 107px;
+    padding-right: 107px;
+    padding-top: 18px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-signUp-text p {
+    font-size: 21px;
+    color: #1a1e24;
+}
+
+.sub-signUp-input-left {
+    width: 51%;
+}
+
+.sub-signUp-input-left input {
+    width: 100%;
+    padding: 14px;
+}
+
+.sub-signUp-input-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 76px;
+    background-color: #1a1e24;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.sub-signUp-input-right p {
+    color: white;
+    font-style: italic;
+    font-weight: 600;
+
 }
 
 
@@ -177,6 +243,11 @@ body {}
 
 }
 
+@media screen and (max-width:1200px) {
+    .sub-signUp-text h1 {
+        font-size: 38px;
+    }
+}
 
 @media screen and (max-width:600px) {
 
@@ -209,9 +280,9 @@ body {}
         padding-bottom: 10px;
     }
 
-.sub-content-item{
-    display: grid;
-}
+    .sub-content-item {
+        display: grid;
+    }
 
     .sub-content-left {
 
@@ -235,6 +306,39 @@ body {}
     .sub-content-text p {
 
         font-size: 17px;
+    }
+
+    .sub-signUp {
+        width: 100%;
+    }
+
+    .sub-signUp-text {
+        padding: 51px;
+    }
+
+    .sub-signUp-text h1 {
+
+        font-size: 24px;
+    }
+
+    .sub-signUp {
+
+        margin: 11px auto;
+    }
+
+    .sub-signUp-text p {
+
+        font-size: 16px;
+    }
+
+    .sub-signUp-input {
+        width: 80%;
+        padding: 18px 0 118px 35px;
+    }
+
+
+    .sub-signUp-input-right p {
+        font-size: 12px;
     }
 }
 

@@ -23,21 +23,23 @@
                 <img src="born-fitness-logo.svg" alt="fitness icon" class="born-icon">
             </a>
             <div class="right">
+               
+               
                 <ul class="nav-point">
-                    <li>BLOGS</li>
-                    <li>NEWSLETTER</li>
-                    <li>COACHING</li>
-                    <li>STORE</li>
-                    <li>SIGN IN</li>
+                    <li class="blogPage">BLOGS</li>
+                    <li class="newsLetterPage">NEWSLETTER</li>
+                    <li class="coachingPage">COACHING</li>
+                    <li class="storePage">STORE</li>
+                    <li class="signInPage">SIGN IN</li>
                 </ul>
                 <div class="offcanvas-menu">
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#">BLOGS</a></li>
-                        <li><a href="#">NEWSLETTER</a></li>
-                        <li><a href="#">COACHING</a></li>
-                        <li><a href="#">STORE</a></li>
-                        <li><a href="#">SIGN IN</a></li>
+                        <li class="homePage"><a href="#">HOME</a></li>
+                        <li class="blogPage"><a href="#" >BLOGS</a></li>
+                        <li class="newsLetterPage"><a href="#" >NEWSLETTER</a></li>
+                        <li class="coachingPage"><a href="#" >COACHING</a></li>
+                        <li class="storePage"><a href="#" >STORE</a></li>
+                        <li class="signInPage"><a href="#" >SIGN IN</a></li>
                     </ul>
                 </div>
 
@@ -49,7 +51,7 @@
                 </div>
                 <div class="search-icon">
                     <div class="search-container">
-                        <input type="text" placeholder="Search" id="search-input">
+                        <input type="text" placeholder="Search i.e.protein" id="search-input">
                         <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                         <div class="search-suggestions">
                             <ul class="suggestion-list"></ul>
@@ -70,6 +72,9 @@
                 <h2 class="hero-content__subtitle">(So You Can Enjoy Life)</h2>
                 <p>Get Exclusive Health Tips We Only Share With Email Subscribers
                 </p>
+                <div class="notvalid">
+                    <p>Enter valid email</p>
+                </div>
                 <div class="email-section">
                     <input type="text" placeholder="Email Address" id="email">
                     <div class="signup-container">
@@ -283,8 +288,8 @@
             <p class="footer-left-text">
                 We Have Answers.
             </p>
-            <span><input type="text" placeholder="Type (i.e. protein)" id="email">
-                <i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
+            <span><input type="text" placeholder="Type (i.e. protein)" id="comment-box">
+                <i class="fa-sharp fa-solid fa-magnifying-glass footer-search"></i></span>
             <div class="social">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-square-instagram"></i>
@@ -324,6 +329,7 @@
         <p class="footer2-text">© 2020 Born Fitness, LLC • Privacy Policy • Terms of Use</p>
     </div>
 </body>
+<script src="footer.js"></script>
 <script src="index.js"></script>
 
 </html>

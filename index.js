@@ -235,36 +235,157 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const signUp = document.querySelector('.signup');
     const signupEmail = document.getElementById('email');
-
+    const notValidMessage = document.querySelector('.notvalid');
 
 
     signupEmail.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
-            event.preventDefault();
-            signupEmail.value = "";
+            const enteredEmail = signupEmail.value.trim();
+            if (isValidEmail(enteredEmail)) {
+                event.preventDefault();
+                console.log(signupEmail.value)
+                signupEmail.value = "";
+                notValidMessage.style.display = 'none';
+            }
+            else {
+                notValidMessage.style.display = 'block';
+            }
+
 
         }
     })
     signUp.addEventListener('click', function (event) {
-        event.preventDefault();
-        signupEmail.value = "";
+        const enteredEmail = signupEmail.value.trim();
+        if (isValidEmail(enteredEmail)) {
+            event.preventDefault();
+            console.log(signupEmail.value)
+            signupEmail.value = "";
+            notValidMessage.style.display = 'none';
+        }
+        else {
+            notValidMessage.style.display = 'block';
+        }
+
 
     })
+    function isValidEmail(email) {
+        const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return emailPattern.test(email);
+    }
 
-    const searchIconFooter = document.querySelector('.fa-sharp'); // Select the footer search icon
-    const footerEmailInput = document.getElementById('email'); // Select the footer input field
+    const searchIconFooter = document.querySelector('.footer-search');
+    const footerEmailInput = document.getElementById('comment-box');
 
     searchIconFooter.addEventListener('click', function (event) {
         event.preventDefault();
-        footerEmailInput.value = ''; // Clear the footer input field value
+        console.log(footerEmailInput.value)
+        footerEmailInput.value = '';
     });
 
-    footerEmailInput.addEventListener('keyup', function (event) {
+    footerEmailInput.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
             event.preventDefault();
-            footerEmailInput.value = ''; // Clear the footer input field value
+            console.log(footerEmailInput.value)
+            footerEmailInput.value = '';
         }
     });
 
+
+    function closeOffCanvasMenu() {
+        const offcanvasMenu = document.querySelector('.offcanvas-menu');
+        offcanvasMenu.classList.remove('show');
+    }
+
+    const signInLink = document.querySelector('.offcanvas-menu .signInPage');
+    signInLink.addEventListener('click', function () {
+
+        window.location.href = "signIn.html";
+        closeOffCanvasMenu();
+
+    });
+    const signInLink1 = document.querySelector('.nav-point .signInPage');
+    signInLink1.addEventListener('click', function () {
+
+        window.location.href = "signIn.html";
+        closeOffCanvasMenu();
+    });
+
+    const offCanvasLinks = document.querySelectorAll('.offcanvas-menu a');
+    offCanvasLinks.forEach(link => {
+        link.addEventListener('click', closeOffCanvasMenu);
+
+    });
+
+
+
+
+
+
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const signInEmail = document.querySelector('.signIn-email');
+    const signInBtn = document.querySelector('.signIn-btn');
+    const signInHomeLinks = document.querySelectorAll('.signIn-home-link');
+    const notValidMessage = document.querySelector('.notvalid');
+    signInBtn.addEventListener('click', function () {
+        const enteredEmail = signInEmail.value.trim();
+        if (isValidEmail(enteredEmail)) {
+            console.log(signInEmail.value)
+            signInEmail.value = "";
+            notValidMessage.style.display = 'none';
+        }
+        else {
+            notValidMessage.style.display = 'block';
+        }
+    })
+
+    signInEmail.addEventListener('keypress', function (event) {
+
+        if (event.key === 'Enter') {
+            const enteredEmail = signInEmail.value.trim();
+            if (isValidEmail(enteredEmail)) {
+                console.log(signInEmail.value)
+                signInEmail.value = "";
+                notValidMessage.style.display = 'none';
+            }
+            else {
+                notValidMessage.style.display = 'block';
+            }
+
+        }
+    });
+    function isValidEmail(email) {
+        const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return emailPattern.test(email);
+    }
+
+
+
+    signInHomeLinks.forEach(link => {
+        link.addEventListener('click', function () {
+
+            window.location.href = "index.html";
+        });
+    });
+    const searchIconFooter = document.querySelector('.footer-search');
+    const footerEmailInput = document.getElementById('comment-box');
+
+    searchIconFooter.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log(footerEmailInput.value)
+        footerEmailInput.value = '';
+    });
+
+    footerEmailInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            console.log(footerEmailInput.value)
+            footerEmailInput.value = '';
+        }
+    });
+
+});
+
 

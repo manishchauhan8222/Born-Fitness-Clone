@@ -260,6 +260,8 @@ body {
     margin-bottom: 60px;
 }
 
+
+
 .content1-left p {
     font-size: 21px;
     text-align: left;
@@ -320,7 +322,15 @@ body {
 
 }
 
+.notvalid {
+    margin: auto;
+    display: none;
+}
 
+.notvalid p {
+    font-size: 13px;
+    color: #000000b5;
+}
 
 .bold {
     font-size: 1.5vw;
@@ -529,10 +539,11 @@ body {
     font-size: 19px;
     margin: 10px auto 30px auto;
 }
+
 .footer-left span {
     position: relative;
     display: inline-block;
-  }
+}
 
 .footer-left span input {
     font-size: 15px;
@@ -542,12 +553,13 @@ body {
     outline: none;
     width: 85%;
 }
-.footer-left span i{
+
+.footer-left span i {
     position: absolute;
     top: 50%;
-    right: 10px; 
+    right: 10px;
     transform: translateY(-50%);
-    color: #555; 
+    color: #555;
     cursor: pointer;
 }
 
@@ -772,7 +784,7 @@ body {
 
 .content8-image2 {
 
-   
+
     position: absolute;
 
     left: 40%;
@@ -787,14 +799,15 @@ body {
 }
 
 
-.content8-image2 img{
+.content8-image2 img {
     height: auto;
     width: 12vw;
-}   
+}
+
 .content8-image2 {
     width: 12%;
-   
-    }
+
+}
 
 
 .content8-text1 {
@@ -805,6 +818,7 @@ body {
     font-size: 19px;
     margin-bottom: 36px;
 }
-.content8-image1 .img-left{
+
+.content8-image1 .img-left {
     width: 85%;
 }

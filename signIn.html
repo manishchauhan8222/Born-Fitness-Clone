@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In - Born Fitness&nbsp;— The Rules of Fitness Reborn</title>
+    <link rel="icon" href="icons8-running.gif" type="image/gif">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .navigation {
+            position: relative;
+        }
+
+
+
+        .signIn-container .left {
+            width: 35%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-color: #f3f7fa;
+
+        }
+
+        .signIn-container .left p {
+            font-size: 38px;
+            font-weight: 600;
+            color: #000000b5;
+            margin-top: 94px;
+        }
+
+        .signIn-container .right {
+            display: grid;
+            height: 100%;
+            padding-left: 169px;
+        }
+
+        .upper {
+            width: 371px;
+            box-shadow: 1px 1px 6px #000000b5;
+        }
+
+        .signIn-email {
+            width: 94%;
+            padding: 9px;
+            outline: none;
+        }
+
+        span.signIn-home-link {
+            border-bottom: 1px solid;
+        }
+
+
+
+        .signIn-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .signIn-btn {
+            background: black;
+            width: 371px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        .signIn-btn p {
+            color: white;
+            padding: 15px;
+        }
+
+        .signIn-home-link {
+            color: #000000ab;
+            font-size: 14px;
+
+        }
+
+        .signIn-home-link1 {
+            border-bottom: 1px solid #000000b5;
+        }
+
+        .signIn-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .notvalid{
+            margin: auto;
+            display: none;
+        }
+        .notvalid p{
+            font-size: 13px;
+            color: #000000b5;
+        }
+
+        @media screen and (max-width:760px) {
+
+            .signIn-container {
+                display: grid;
+            }
+
+            .signIn-container .left {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+
+            .signIn-container .left p {
+                
+                display: flex;
+                margin: 70px;
+
+            }
+
+            .signIn-container .right {
+
+                padding-left: 0px;
+                height: 80%;
+                justify-content: center;
+            }
+
+            .right {
+                margin-right: 0px;
+            }
+        
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="nav-content">
+            <a href="index.html">
+                <img src="born-fitness-logo.svg" alt="fitness icon" class="born-icon">
+            </a>
+            <div class="right">
+                <ul class="nav-point">
+                    <li class="blogPage">BLOGS</li>
+                    <li class="newsLetterPage">NEWSLETTER</li>
+                    <li class="coachingPage">COACHING</li>
+                    <li class="storePage">STORE</li>
+                    <li class="signInPage">SIGN IN</li>
+                </ul>
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li class="homePage"><a href="#">HOME</a></li>
+                        <li class="blogPage"><a href="#" >BLOGS</a></li>
+                        <li class="newsLetterPage"><a href="#" >NEWSLETTER</a></li>
+                        <li class="coachingPage"><a href="#" >COACHING</a></li>
+                        <li class="storePage"><a href="#" >STORE</a></li>
+                        <li class="signInPage"><a href="#" >SIGN IN</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="search-icon">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search i.e.protein" id="search-input">
+                        <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                        <div class="search-suggestions">
+                            <ul class="suggestion-list"></ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="signIn-container">
+        <div class="left">
+            <p>Sign in</p>
+        </div>
+        <div class="right">
+            <div class="notvalid">
+                <p>Enter valid email</p>
+            </div>
+            <div class="upper">
+                <input type="text" class="signIn-email" placeholder="Email">
+
+            </div>
+            <div class="signIn-btn">
+                <p>Continue</p>
+            </div>
+            <div class="signIn-home">
+                <span class="signIn-home-link">Born Fitness</span>
+                <svg class="signIn-home-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true" class="w-3 h-3 relative">
+                    <title></title>
+                    <path
+                        d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footer-left">
+            <p class="footer-heading">
+                YOU’VE GOT QUESTIONS.
+            </p>
+            <p class="footer-left-text">
+                We Have Answers.
+            </p>
+            <span><input type="text" placeholder="Type (i.e. protein)" id="comment-box">
+                <i class="fa-sharp fa-solid fa-magnifying-glass footer-search"></i></span>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-right-item1">
+                <p class="footer-heading">SERVICES</p>
+                <p class="footer-text">Online Coaching</p>
+                <p class="footer-text">Born Fitness+</p>
+                <p class="footer-text">Fit Father Guide</p>
+                <p class="footer-text">Fat Loss Academy</p>
+                <p class="footer-text">Consulting</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">RESOURCES</p>
+                <p class="footer-text">Our Weekly Email</p>
+                <p class="footer-text">Blog</p>
+                <p class="footer-text">That’s Healthy, Right?</p>
+                <p class="footer-text">Books</p>
+                <p class="footer-text">Videos</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">COMPANY</p>
+                <p class="footer-text">Our Story</p>
+                <p class="footer-text">Testimonials</p>
+                <p class="footer-text">Contact Us</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer2">
+        <p class="footer2-text">© 2020 Born Fitness, LLC • Privacy Policy • Terms of Use</p>
+    </div>
+</body>
+<script src="footer.js"></script>
+<script src="index.js"></script>
+
+</html>
