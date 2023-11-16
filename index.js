@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const signUp = document.querySelector('.signup');
-    const signupEmail = document.getElementById('email');
+    const signupEmail = document.querySelector('.main-email');
     const notValidMessage = document.querySelector('.notvalid');
 
 

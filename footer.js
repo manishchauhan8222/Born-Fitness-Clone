@@ -228,7 +228,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
 
+    const homeLink = document.querySelector('.offcanvas-menu .homePage');
+    homeLink.addEventListener('click', function () {
+
+        window.location.href = "index.html";
+        closeOffCanvasMenu();
+
+    });
+    const homeLink1 = document.querySelector('.nav-point .homePage');
+    homeLink1.addEventListener('click', function () {
+
+        window.location.href = "index.html";
+        closeOffCanvasMenu();
+    });
+
+    const offCanvasLinks = document.querySelectorAll('.offcanvas-menu a');
+    offCanvasLinks.forEach(link => {
+        link.addEventListener('click', closeOffCanvasMenu);
+
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const newsLetterLink = document.querySelector('.offcanvas-menu .newsLetterPage');
