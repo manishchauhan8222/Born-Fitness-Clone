@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     subSearch.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
             if (subSearch.value.toLowerCase() === 'protein') {
+                event.preventDefault();
                 window.location.href = "protein_page.html";
                 subSearch.value = "";
             }
@@ -12,51 +13,63 @@ document.addEventListener('DOMContentLoaded', function () {
 
             else if (subSearch.value.toLowerCase() === 'multivitamin') {
                 window.location.href = "mutlivitamin.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'creatine') {
-                console.log('erroe')
+            
                 window.location.href = "creatine.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'gainer') {
                 window.location.href = "gainer.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'mass') {
                 window.location.href = "gainer.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'strength') {
                 window.location.href = " max-strength.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'whey') {
                 window.location.href = "whey.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'isolate') {
                 window.location.href = "isolate.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'cuts') {
                 window.location.href = "cuts.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'testosterone') {
                 window.location.href = "test.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'weight loss') {
                 window.location.href = "weight.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'massage gun') {
                 window.location.href = "massage.html";
+                event.preventDefault();
                 subSearch.value = "";
             }
             else if (subSearch.value.toLowerCase() === 'fish oil') {
                 window.location.href = "fish.html";
+                event.preventDefault();
                 subSearch.value = "";
 
             }
@@ -298,19 +311,21 @@ document.addEventListener('DOMContentLoaded', function () {
     subInput.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
 
-            // event.preventDefault();
+            event.preventDefault();
             console.log(subInput.value)
             subInput.value = "";
             notValidMessage.style.display = 'none';
         }
         else {
             notValidMessage.style.display = 'block';
+            event.preventDefault();
+
         }
 
     })
     subButton.addEventListener('click', function (event) {
 
-        // event.preventDefault();
+        event.preventDefault();
         console.log(subInput.value)
         subInput.value = "";
         notValidMessage.style.display = 'none';
@@ -324,14 +339,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (searchIconFooter && footerEmailInput) {
         searchIconFooter.addEventListener('click', function (event) {
-            // event.preventDefault();
+            event.preventDefault();
             console.log(footerEmailInput.value)
             footerEmailInput.value = '';
         });
 
         footerEmailInput.addEventListener('keypress', function (event) {
             if (event.key === 'Enter') {
-                // event.preventDefault();
+                event.preventDefault();
                 console.log(footerEmailInput.value)
                 footerEmailInput.value = '';
             }

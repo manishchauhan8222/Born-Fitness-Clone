@@ -242,13 +242,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.key === 'Enter') {
             const enteredEmail = signupEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
-                // event.preventDefault();
+                event.preventDefault();
                 console.log(signupEmail.value)
                 signupEmail.value = "";
                 notValidMessage.style.display = 'none';
             }
             else {
                 notValidMessage.style.display = 'block';
+                event.preventDefault();
             }
 
 
@@ -257,13 +258,14 @@ document.addEventListener('DOMContentLoaded', function () {
     signUp.addEventListener('click', function (event) {
         const enteredEmail = signupEmail.value.trim();
         if (isValidEmail(enteredEmail)) {
-            // event.preventDefault();
+            event.preventDefault();
             console.log(signupEmail.value)
             signupEmail.value = "";
             notValidMessage.style.display = 'none';
         }
         else {
             notValidMessage.style.display = 'block';
+            event.preventDefault();
         }
 
 
@@ -329,15 +331,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const signInBtn = document.querySelector('.signIn-btn');
     const signInHomeLinks = document.querySelectorAll('.signIn-home-link');
     const notValidMessage = document.querySelector('.notvalid');
-    signInBtn.addEventListener('click', function () {
+    signInBtn.addEventListener('click', function (event) {
         const enteredEmail = signInEmail.value.trim();
         if (isValidEmail(enteredEmail)) {
             console.log(signInEmail.value)
+            event.preventDefault();
             signInEmail.value = "";
             notValidMessage.style.display = 'none';
         }
         else {
             notValidMessage.style.display = 'block';
+            event.preventDefault();
         }
     })
 
@@ -347,11 +351,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const enteredEmail = signInEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
                 console.log(signInEmail.value)
+                event.preventDefault();
                 signInEmail.value = "";
                 notValidMessage.style.display = 'none';
             }
             else {
                 notValidMessage.style.display = 'block';
+                event.preventDefault();
             }
 
         }
