@@ -1,11 +1,13 @@
+// footer.js
 document.addEventListener('DOMContentLoaded', function () {
 
     const subSearch = document.querySelector('.item-search');
     const subIcon = document.querySelector('.sub-search .fa-sharp');
     subSearch.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter') { 
+            event.preventDefault();
             if (subSearch.value.toLowerCase() === 'protein') {
-                event.preventDefault();
+               
                 window.location.href = "protein_page.html";
                 subSearch.value = "";
             }

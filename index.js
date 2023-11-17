@@ -239,17 +239,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     signupEmail.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter')  {
+            event.preventDefault();
             const enteredEmail = signupEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
-                event.preventDefault();
+               
                 console.log(signupEmail.value)
                 signupEmail.value = "";
                 notValidMessage.style.display = 'none';
             }
             else {
                 notValidMessage.style.display = 'block';
-                event.preventDefault();
+             
             }
 
 
@@ -265,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             notValidMessage.style.display = 'block';
-            event.preventDefault();
+            
         }
 
 
@@ -319,8 +320,9 @@ document.addEventListener('DOMContentLoaded', function () {
     signInBtn.addEventListener('click', function (event) {
         const enteredEmail = signInEmail.value.trim();
         if (isValidEmail(enteredEmail)) {
-            console.log(signInEmail.value)
             event.preventDefault();
+            console.log(signInEmail.value)
+            
             signInEmail.value = "";
             notValidMessage.style.display = 'none';
         }
@@ -333,16 +335,17 @@ document.addEventListener('DOMContentLoaded', function () {
     signInEmail.addEventListener('keypress', function (event) {
 
         if (event.key === 'Enter') {
+             event.preventDefault();
             const enteredEmail = signInEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
                 console.log(signInEmail.value)
-                event.preventDefault();
+               
                 signInEmail.value = "";
                 notValidMessage.style.display = 'none';
             }
             else {
                 notValidMessage.style.display = 'block';
-                event.preventDefault();
+               
             }
 
         }
