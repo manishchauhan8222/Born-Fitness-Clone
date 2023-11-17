@@ -1,54 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const searchIconFooter = document.querySelector('.footer-search');
-    const footerEmailInput = document.getElementById('comment-box');
 
-    if (searchIconFooter && footerEmailInput) {
-        searchIconFooter.addEventListener('click', function (event) {
-            // event.preventDefault();
-            console.log(footerEmailInput.value)
-            footerEmailInput.value = '';
-        });
-
-        footerEmailInput.addEventListener('keypress', function (event) {
-            if (event.key === 'Enter') {
-                // event.preventDefault();
-                console.log(footerEmailInput.value)
-                footerEmailInput.value = '';
-            }
-        });
-    } else {
-        console.error('Element not found. Check the class or ID used for selection.');
-    }
-
-    const subInput = document.querySelector('.sub-input');
-    const subButton = document.querySelector('.sub-buttton');
-
-
-
-    subInput.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
-
-            // event.preventDefault();
-            console.log(subInput.value)
-            subInput.value = "";
-            notValidMessage.style.display = 'none';
-        }
-        else {
-            notValidMessage.style.display = 'block';
-        }
-
-    })
-    subButton.addEventListener('click', function (event) {
-
-        // event.preventDefault();
-        console.log(subInput.value)
-        subInput.value = "";
-        notValidMessage.style.display = 'none';
-
-    })
-
-
-    const subSearch = document.querySelector('.sub-search #email');
+    const subSearch = document.querySelector('.item-search');
     const subIcon = document.querySelector('.sub-search .fa-sharp');
     subSearch.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') {
@@ -334,4 +286,57 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', closeOffCanvasMenu);
 
     });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const subInput = document.querySelector('.sub-input');
+    const subButton = document.querySelector('.sub-buttton');
+
+
+
+    subInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+
+            // event.preventDefault();
+            console.log(subInput.value)
+            subInput.value = "";
+            notValidMessage.style.display = 'none';
+        }
+        else {
+            notValidMessage.style.display = 'block';
+        }
+
+    })
+    subButton.addEventListener('click', function (event) {
+
+        // event.preventDefault();
+        console.log(subInput.value)
+        subInput.value = "";
+        notValidMessage.style.display = 'none';
+
+    })
+
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const searchIconFooter = document.querySelector('.footer-search');
+    const footerEmailInput = document.getElementById('comment-box');
+
+    if (searchIconFooter && footerEmailInput) {
+        searchIconFooter.addEventListener('click', function (event) {
+            // event.preventDefault();
+            console.log(footerEmailInput.value)
+            footerEmailInput.value = '';
+        });
+
+        footerEmailInput.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                // event.preventDefault();
+                console.log(footerEmailInput.value)
+                footerEmailInput.value = '';
+            }
+        });
+    } else {
+        console.error('Element not found. Check the class or ID used for selection.');
+    }
 });

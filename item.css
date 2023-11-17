@@ -16,10 +16,11 @@
     width: 100%;
 }
 
-.sub-search #email {
+.sub-search .item-search {
     width: 90%;
     padding: 0;
     outline: none;
+    border: none !important;
 }
 
 .sub-search-heading {
@@ -263,7 +264,7 @@
         font-weight: 600;
     }
 
-    .sub-search #email {
+    .sub-search .item-search {
         padding: 0;
         width: 80%;
         outline: none;
@@ -274,7 +275,7 @@
     }
 
 
-    .sub-search #email {
+    .sub-search .sub-search {
 
         padding-top: 10px;
         padding-bottom: 10px;
