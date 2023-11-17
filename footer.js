@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subSearch.value = "";
 
             }
+            
 
         }
     })
