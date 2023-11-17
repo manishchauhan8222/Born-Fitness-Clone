@@ -277,7 +277,7 @@ body {
     margin-top: 33px;
 }
 
-#email {
+.main-email {
     border: 2px solid yellow;
     width: 22vw;
     padding: 6px;

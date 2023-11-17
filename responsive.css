@@ -86,7 +86,7 @@
         font-size: 19px;
     }
 
-    #email {
+    .main-email {
 
         width: 31vw;
     }
@@ -416,7 +416,7 @@
         margin-top: 21px;
     }
 
-    #email {
+    .main-email {
         width: 64vw;
         padding: 4vw;
     }

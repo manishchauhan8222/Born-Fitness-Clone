@@ -275,22 +275,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return emailPattern.test(email);
     }
 
-    // const searchIconFooter = document.querySelector('.footer-search');
-    // const footerEmailInput = document.getElementById('comment-box');
 
-    // searchIconFooter.addEventListener('click', function (event) {
-    //     // event.preventDefault();
-    //     console.log(footerEmailInput.value)
-    //     footerEmailInput.value = '';
-    // });
-
-    // footerEmailInput.addEventListener('keypress', function (event) {
-    //     if (event.key === 'Enter') {
-    //         // event.preventDefault();
-    //         console.log(footerEmailInput.value)
-    //         footerEmailInput.value = '';
-    //     }
-    // });
 
 
     function closeOffCanvasMenu() {
@@ -375,22 +360,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = "index.html";
         });
     });
-    // const searchIconFooter = document.querySelector('.footer-search');
-    // const footerEmailInput = document.getElementById('comment-box');
-
-    // searchIconFooter.addEventsListener('click', function (event) {
-    //     // event.preventDefault();
-    //     console.log(footerEmailInput.value)
-    //     footerEmailInput.value = '';
-    // });
-
-    // footerEmailInput.addEventListener('keypress', function (event) {
-    //     if (event.key === 'Enter') {
-    //         // event.preventDefault();
-    //         console.log(footerEmailInput.value)
-    //         footerEmailInput.value = '';
-    //     }
-    // });
+   
 
 });
 
