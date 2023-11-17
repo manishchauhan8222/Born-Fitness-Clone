@@ -20,6 +20,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
 
 }
 
@@ -265,7 +266,7 @@ body {
 .content1-left p {
     font-size: 21px;
     text-align: left;
-    margin-bottom: 20px;
+ 
 }
 
 .email-section {
@@ -297,7 +298,7 @@ body {
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
-    padding: 8px 30px;
+    padding: 12px 30px;
     border-radius: 3px;
     font-size: 24px;
     font-size: 1vw;
@@ -556,7 +557,7 @@ body {
 
 .footer-left span i {
     position: absolute;
-    top: 50%;
+    top: 33%;
     right: 10px;
     transform: translateY(-50%);
     color: #555;

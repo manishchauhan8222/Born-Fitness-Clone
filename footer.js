@@ -5,87 +5,88 @@ document.addEventListener('DOMContentLoaded', function () {
     const subIcon = document.querySelector('.sub-search .fa-sharp');
     subSearch.addEventListener('keypress', function (event) {
         if (event.key === 'Enter') { 
+            
             event.preventDefault();
-            if (subSearch.value.toLowerCase() === 'protein') {
+            if (subSearch.value.trim().toLowerCase() === 'protein') {
                
                 window.location.href = "protein_page.html";
                 subSearch.value = "";
             }
 
 
-            else if (subSearch.value.toLowerCase() === 'multivitamin') {
+            else if (subSearch.value.trim().toLowerCase() === 'multivitamin') {
                 window.location.href = "mutlivitamin.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'creatine') {
+            else if (subSearch.value.trim().toLowerCase() === 'creatine') {
             
                 window.location.href = "creatine.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'gainer') {
+            else if (subSearch.value.trim().toLowerCase() === 'gainer') {
                 window.location.href = "gainer.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'mass') {
+            else if (subSearch.value.trim().toLowerCase() === 'mass') {
                 window.location.href = "gainer.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'strength') {
+            else if (subSearch.value.trim().toLowerCase() === 'strength') {
                 window.location.href = " max-strength.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'whey') {
+            else if (subSearch.value.trim().toLowerCase() === 'whey') {
                 window.location.href = "whey.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'isolate') {
+            else if (subSearch.value.trim().toLowerCase() === 'isolate') {
                 window.location.href = "isolate.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'cuts') {
+            else if (subSearch.value.trim().toLowerCase() === 'cuts') {
                 window.location.href = "cuts.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'testosterone') {
+            else if (subSearch.value.trim().toLowerCase() === 'testosterone') {
                 window.location.href = "test.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'weight loss') {
+            else if (subSearch.value.trim().toLowerCase() === 'weight loss') {
                 window.location.href = "weight.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'massage gun') {
+            else if (subSearch.value.trim().toLowerCase() === 'massage gun') {
                 window.location.href = "massage.html";
                 event.preventDefault();
                 subSearch.value = "";
             }
-            else if (subSearch.value.toLowerCase() === 'fish oil') {
+            else if (subSearch.value.trim().toLowerCase() === 'fish oil') {
                 window.location.href = "fish.html";
                 event.preventDefault();
                 subSearch.value = "";
 
             }
-            else if (subSearch.value.toLowerCase() === 'peanut butter') {
+            else if (subSearch.value.trim().toLowerCase() === 'peanut butter') {
                 window.location.href = "peanut.html ";
                 subSearch.value = "";
 
             }
-            else if (subSearch.value.toLowerCase() === 'yoga block') {
+            else if (subSearch.value.trim().toLowerCase() === 'yoga block') {
                 window.location.href = "yoga.html";
                 subSearch.value = "";
 
             }
-            else if (subSearch.value.toLowerCase() === 'speed roller') {
+            else if (subSearch.value.trim().toLowerCase() === 'speed roller') {
                 window.location.href = "speed.html";
                 subSearch.value = "";
 
@@ -95,76 +96,76 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
     subIcon.addEventListener('click', function () {
-        if (subSearch.value.toLowerCase() === 'protein') {
+        if (subSearch.value.trim().toLowerCase() === 'protein') {
             window.location.href = "protein_page.html";
             subSearch.value = "";
         }
 
-        else if (subSearch.value.toLowerCase() === 'multivitamin') {
+        else if (subSearch.value.trim().toLowerCase() === 'multivitamin') {
             window.location.href = "mutlivitamin.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'creatine') {
+        else if (subSearch.value.trim().toLowerCase() === 'creatine') {
             console.log('erroe')
             window.location.href = "creatine.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'gainer') {
+        else if (subSearch.value.trim().toLowerCase() === 'gainer') {
             window.location.href = "gainer.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'mass') {
+        else if (subSearch.value.trim().toLowerCase() === 'mass') {
             window.location.href = "gainer.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'strength') {
+        else if (subSearch.value.trim().toLowerCase() === 'strength') {
             window.location.href = " max-strength.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'max') {
+        else if (subSearch.value.trim().toLowerCase() === 'max') {
             window.location.href = " max-strength.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'whey') {
+        else if (subSearch.value.trim().toLowerCase() === 'whey') {
             window.location.href = "whey.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'isolate') {
+        else if (subSearch.value.trim().toLowerCase() === 'isolate') {
             window.location.href = "isolate.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'cuts') {
+        else if (subSearch.value.trim().toLowerCase() === 'cuts') {
             window.location.href = "cuts.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'testosterone') {
+        else if (subSearch.value.trim().toLowerCase() === 'testosterone') {
             window.location.href = "test.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'weight loss') {
+        else if (subSearch.value.trim().toLowerCase() === 'weight loss') {
             window.location.href = "weight.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'massage gun') {
+        else if (subSearch.value.trim().toLowerCase() === 'massage gun') {
             window.location.href = "massage.html";
             subSearch.value = "";
         }
-        else if (subSearch.value.toLowerCase() === 'fish oil') {
+        else if (subSearch.value.trim().toLowerCase() === 'fish oil') {
             window.location.href = "fish.html";
             subSearch.value = "";
 
         }
-        else if (subSearch.value.toLowerCase() === 'peanut butter') {
+        else if (subSearch.value.trim().toLowerCase() === 'peanut butter') {
             window.location.href = "peanut.html ";
             subSearch.value = "";
 
         }
-        else if (subSearch.value.toLowerCase() === 'yoga block') {
+        else if (subSearch.value.trim().toLowerCase() === 'yoga block') {
             window.location.href = "yoga.html";
             subSearch.value = "";
 
         }
-        else if (subSearch.value.toLowerCase() === 'speed roller') {
+        else if (subSearch.value.trim().toLowerCase() === 'speed roller') {
             window.location.href = "speed.html";
             subSearch.value = "";
 

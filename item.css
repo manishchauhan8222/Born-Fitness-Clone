@@ -155,21 +155,21 @@
 }
 
 .sub-signUp-input-left {
-    width: 51%;
+    width: 50%;
 }
 
 .sub-signUp-input-left input {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
 }
 
 .sub-signUp-input-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 76px;
+    margin-left: 46px;
     background-color: #1a1e24;
-    padding: 14px;
+    padding: 12px;
     cursor: pointer;
 }
 
@@ -179,7 +179,10 @@
     font-weight: 600;
 
 }
-
+.sub-search  span  button{
+    background: none;
+    border: none;
+    }
 
 
 /* resposive */
