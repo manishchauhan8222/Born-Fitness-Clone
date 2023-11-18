@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // quiz page start button --> issue DOM Content Loading
+    const startButton = document.getElementById('start-btn');
+    const existingFooter = document.getElementById('existing-quiz-footer');
+    const newFooter = document.getElementById('new-quiz-footer');
+    startButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        existingFooter.style.display = 'none';
+        newFooter.style.display = 'block';
+    })
+
+    // search item by using main-input box
     const fitnessItems = [
         'Protein', 'Multivitamin', 'Creatine', 'Mass Gainer', 'Max Strength',
         'Whey', 'Isolate', 'cuts', 'Testosterone', 'Weight Loss', 'Speed Roller',
@@ -182,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // js for hamburger menu
     suggestionList.addEventListener('click', handleSuggestionClick);
     const offcanvasMenu = document.querySelector('.offcanvas-menu');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -232,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+// js for home page sign up
 document.addEventListener('DOMContentLoaded', function () {
     const signUp = document.querySelector('.signup');
     const signupEmail = document.querySelector('.main-email');
@@ -240,18 +253,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     signupEmail.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter')  {
+        if (event.key === 'Enter') {
             event.preventDefault();
             const enteredEmail = signupEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
-               
+
                 console.log(signupEmail.value)
                 signupEmail.value = "";
                 notValidMessage.style.display = 'none';
+                window.location.href = "sign-in-newPage.html";
             }
             else {
                 notValidMessage.style.display = 'block';
-             
+
             }
 
 
@@ -264,15 +278,16 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(signupEmail.value)
             signupEmail.value = "";
             notValidMessage.style.display = 'none';
+            window.location.href = "sign-in-newPage.html";
         }
         else {
             notValidMessage.style.display = 'block';
-            
+
         }
 
 
     })
-    signupEmail.addEventListener('input', function() {
+    signupEmail.addEventListener('input', function () {
         notValidMessage.style.display = "none";
     });
     function isValidEmail(email) {
@@ -281,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
+// js for small screen navigation
 
     function closeOffCanvasMenu() {
         const offcanvasMenu = document.querySelector('.offcanvas-menu');
@@ -315,6 +330,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
+// js for sign In page
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const signInEmail = document.querySelector('.signIn-email');
@@ -326,9 +343,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isValidEmail(enteredEmail)) {
             event.preventDefault();
             console.log(signInEmail.value)
-            
+
             signInEmail.value = "";
             notValidMessage.style.display = 'none';
+            window.location.href = "sign-in-newPage.html";
         }
         else {
             notValidMessage.style.display = 'block';
@@ -339,22 +357,23 @@ document.addEventListener('DOMContentLoaded', function () {
     signInEmail.addEventListener('keypress', function (event) {
 
         if (event.key === 'Enter') {
-             event.preventDefault();
+            event.preventDefault();
             const enteredEmail = signInEmail.value.trim();
             if (isValidEmail(enteredEmail)) {
                 console.log(signInEmail.value)
-               
+
                 signInEmail.value = "";
                 notValidMessage.style.display = 'none';
+                window.location.href = "sign-in-newPage.html";
             }
             else {
                 notValidMessage.style.display = 'block';
-               
+
             }
 
         }
     });
-    signInEmail.addEventListener('input', function() {
+    signInEmail.addEventListener('input', function () {
         notValidMessage.style.display = "none";
     });
     function isValidEmail(email) {
@@ -370,8 +389,29 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = "index.html";
         });
     });
-   
+
+
+
 
 });
+// js for Subscribe page
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const jumpToBlogPage = document.querySelector('.jumpToBlog');
+    const jumpToQuizPage = document.querySelector('.jumpToQuiz')
+    jumpToBlogPage.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = "blog.html";
+    })
+
+    jumpToQuizPage.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = "quiz.html";
+    })
+
+
+
+
+});
 

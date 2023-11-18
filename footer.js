@@ -324,6 +324,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(subInput.value)
                 subInput.value = "";
                 notValidMessage.style.display = 'none';
+                window.location.href="sign-in-newPage.html";
             }
             else {
                 notValidMessage.style.display = 'block';
@@ -340,6 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(subInput.value)
             subInput.value = "";
             notValidMessage.style.display = 'none';
+            window.location.href="sign-in-newPage.html";
         }
         else {
             notValidMessage.style.display = 'block';
@@ -356,34 +358,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return emailPattern.test(email);
     }
 
-    // const subInput = document.querySelector('.sub-input');
-    // const subButton = document.querySelector('.sub-buttton');
-
-
-
-    // subInput.addEventListener('keypress', function (event) {
-    //     if (event.key === 'Enter') {
-
-    //         event.preventDefault();
-    //         console.log(subInput.value)
-    //         subInput.value = "";
-    //         notValidMessage.style.display = 'none';
-    //     }
-    //     else {
-    //         notValidMessage.style.display = 'block';
-    //         event.preventDefault();
-
-    //     }
-
-    // })
-    // subButton.addEventListener('click', function (event) {
-
-    //     event.preventDefault();
-    //     console.log(subInput.value)
-    //     subInput.value = "";
-    //     notValidMessage.style.display = 'none';
-
-    // })
+    
+   
 
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -434,6 +410,7 @@ function newsletterEmail(event){
         console.log(newsLetterInput.value)
         newsLetterInput.value="";
         emailWarning.style.display="none"; 
+        window.location.href="sign-in-newPage.html";
     }
     else{
        emailWarning.style.display="block"; 
@@ -446,3 +423,4 @@ function newsletterEmail(event){
     }
 
 });
+

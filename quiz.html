@@ -38,32 +38,62 @@
         margin-bottom: 88px;
     }
 
-    .bold-text {
-        font-size: 19px;
-        font-weight: 700;
-    }
 
-    .underline-text {
-        font-weight: 700;
-        border-bottom: 4px solid #02ffd2;
-        cursor: pointer;
-        font-size: 19px;
-    }
-
-    .underline-text:hover {
-        border-bottom: 4px solid #f8ff31;
-    }
-
-    ul.signup-newpage-container-content-text {
-        margin-left: 40px;
-    }
 
     .signup-newpage-container-content-text {
         font-size: 19px;
         margin-bottom: 35px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
     }
-    a{
-        text-decoration: none;
+
+    .quiz-footer {
+        background: #f3f7fa;
+    }
+
+    div.quiz-content:nth-child(1) {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .quiz-content1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .quiz-content1-text {
+        margin-left: 12px;
+        font-size: 16px;
+    }
+
+    .fa-clock {
+        font-size: 16px;
+    }
+
+    .quiz-content button {
+        padding: 10px;
+        cursor: pointer;
+        background: yellow;
+        border: none;
+    }
+
+    .quiz-content button  {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    #new-quiz-footer {
+        display: none;
+        text-align: center;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    #new-quiz-footer p {
+        font-size: 19px;
     }
 
     /* responsive */
@@ -102,13 +132,15 @@
             font-size: 17px;
         }
 
-        .bold-text {
+        .footer {
+
+            margin-top: 62px;
+        }
+
+        #new-quiz-footer p {
             font-size: 17px;
         }
 
-        .underline-text {
-            font-size: 17px;
-        }
     }
 </style>
 
@@ -165,38 +197,83 @@
 
     <div class="signup-newpage-container">
         <div class="signup-newpage-container-content">
-            <h1>Thank You for Joining Our Community!</h1>
+            <h1>Thanks for being here.</h1>
             <p class="signup-newpage-container-content-text">
-                <span class="bold-text">
+                This short quiz will direct you to the Born Fitness product best suited to your lifestyle, budget, and
+                needs.
+            </p>
 
-                    If you’re seeing this message, it means you’ll now receive our weekly email (it’ll be sent from
-                    <a href="mailto:info@bornfitness.com">
-                        <span class='underline-text'>info@bornfitness.com </span>
-                    </a>).</span> Every Sunday, we share the
-                information you need to live a
-                healthier life and cut out the rest of the noise.
-            </p>
-            <p class="signup-newpage-container-content-text">
-                The Born Fitness weekly email is just one way we help support your fitness, nutrition, and health goals.
-            </p>
-            <p class="signup-newpage-container-content-text">
-                Here are 3 other ways we can help you upgrade your life for free.
-            </p>
-            <ul class="signup-newpage-container-content-text">
-                <li><span class="bold-text">Live updates and insights.</span> If you are looking for quick health,
-                    nutrition, and exercise information, then follow us on <span class="underline-text">Instagram
-                    </span>and <span class="underline-text">Twitter</span>.</li>
-                <li><span class="bold-text"> Free Articles.</span> We have hundreds of free articles on the site written
-                    by bestselling authors and world-class trainers and nutritionists. Be sure to check out our<span
-                        class="underline-text jumpToBlog"> blog and find all of our content.</span></li>
-                <li><span class="bold-text">Customized Help.</span> If you’re looking for more assistance,<span
-                        class="underline-text jumpToQuiz">take our short quiz</span> (1 minute) to see how else we can potentially
-                    help you and what other services we offer.</li>
-            </ul>
-            <p class="signup-newpage-container-content-text">Welcome to the Born Fitness Family!</p>
-            <p class="signup-newpage-container-content-text">-AB and The Born Fitness Team</p>
+
+
 
         </div>
+    </div>
+    <div class="quiz-footer" id="existing-quiz-footer">
+        <div class="quiz-content">
+            <div class="quiz-content1">
+                <span class="quiz-timer">
+                    <i class="fa-solid fa-clock"></i>
+                </span>
+                <p class="quiz-content1-text">
+                    Takes 1 minute
+                </p>
+            </div>
+            <div class="quiz-content2">
+                <button id="start-btn">
+                    Start
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-footer" id="new-quiz-footer" >
+        <p>Coming Soon! Get Ready for an Awesome Quiz Experience. Stay Patient!</p>
+    </div>
+    <div class="footer">
+
+        <div class="footer-left">
+            <p class="footer-heading">
+                YOU’VE GOT QUESTIONS.
+            </p>
+            <p class="footer-left-text">
+                We Have Answers.
+            </p>
+            <span><input type="text" placeholder="Type (i.e. protein)" id="comment-box">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass footer-search"></i></button></span>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-right-item1">
+                <p class="footer-heading">SERVICES</p>
+                <p class="footer-text">Online Coaching</p>
+                <p class="footer-text">Born Fitness+</p>
+                <p class="footer-text">Fit Father Guide</p>
+                <p class="footer-text">Fat Loss Academy</p>
+                <p class="footer-text">Consulting</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">RESOURCES</p>
+                <p class="footer-text">Our Weekly Email</p>
+                <p class="footer-text">Blog</p>
+                <p class="footer-text">That’s Healthy, Right?</p>
+                <p class="footer-text">Books</p>
+                <p class="footer-text">Videos</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">COMPANY</p>
+                <p class="footer-text">Our Story</p>
+                <p class="footer-text">Testimonials</p>
+                <p class="footer-text">Contact Us</p>
+            </div>
+        </div>
+
     </div>
     <div class="footer2">
         <p class="footer2-text">© 2020 Born Fitness, LLC • Privacy Policy • Terms of Use</p>
