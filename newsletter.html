@@ -15,7 +15,294 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+<style>
+    body {
+        overflow-x: hidden;
+    }
 
+    .newsLetter-container1 {
+        background-color: black;
+    }
+
+    .newsletter-container1-b h1 {
+        color: white;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    .newsLetter-container-text {
+        color: white;
+        font-size: 24px;
+    }
+
+    .newsLetter-container-text-name {
+        color: white;
+        font-size: 26px;
+        margin: 61px auto;
+    }
+
+    .newsLetter-container-content {
+        width: 59%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .newsletter-container1-a {
+        justify-content: center;
+        margin: 20px auto;
+        display: flex;
+    }
+
+
+
+    .newsletter-container1-a img {
+        width: 24%;
+        margin: 28px auto;
+    }
+
+
+    .newsletter-container1-c {
+        margin: 43px auto;
+    }
+
+    .newsletter-container1-d {
+        display: flex;
+        margin: 63px auto;
+    }
+
+
+    .newsletter-container1-email .emailAddress{
+        COLOR: WHITE;
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .newsletter-container1-input {
+        margin: 10px auto 15px 0;
+        padding: 7px;
+        width: 38%;
+    }
+
+    .newsletter-container1-email {
+        display: grid;
+        text-align: left;
+    }
+
+    .newsLetter-container-1-button {
+        width: 18%;
+        padding: 9px;
+        background: #6ae16a;
+        border: none;
+        cursor: pointer;
+    }
+
+    .newsLetter-container-1-button:hover {
+        background-color: #ffff00d4;
+    }
+
+    .newsLetter-container-1-button p {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(42, 42, 42);
+        font-size: 19px;
+        font-weight: 900;
+    }
+
+    .content-black {
+        color: black;
+    }
+
+    .newsLetter-container2 {
+        margin: 100px auto;
+    }
+
+    .newsletter-container2-left h1 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: #2A2A2A;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 1000;
+        line-height: 125%;
+        letter-spacing: normal;
+        text-align: left;
+        box-sizing: border-box !important;
+        margin-bottom: 25px;
+    }
+
+    .newLetter-container2-items {
+        display: flex;
+    }
+
+    .newsletter-container2-left {
+        padding-right: 174px;
+    }
+
+    .newsletter-left {
+        padding-right: 174px;
+    }
+
+    .newsletter-right {
+        padding: 0;
+    }
+
+    .newsletter-bottom-heading {
+        font-size: 37px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: #FFFFFF;
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 100%;
+        letter-spacing: normal;
+        text-align: left;
+        box-sizing: border-box !important;
+    }
+
+    .term {
+        color: white;
+        border-bottom: 1px solid;
+        display: inline;
+        cursor: pointer;
+    }
+
+    .newsLetter-container-bottom {
+        padding: 149px 0;
+    }
+
+    .bottom-text {
+        margin: 20px auto;
+    }
+
+    .email-warning  {
+        color: red;
+        font-size: 19px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    /* responsive */
+    @media screen and (max-width:1000px) {
+        .newsLetter-container-content {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .navigation2 {
+            margin-top: 0;
+
+        }
+
+        .navigation {
+
+            width: 95%;
+            top: 0;
+        }
+
+        .term {
+            font-size: 14px;
+        }
+
+        .newsletter-bottom-heading {
+            font-size: 37px;
+        }
+    }
+
+    @media screen and (max-width:650px) {
+
+        .newsletter-container1-d {
+            display: grid;
+        }
+
+        .newsLetter-container1-d-left {
+            margin: auto;
+        }
+
+        .newsletter-container1-b h1 {
+            font-size: 33px;
+        }
+
+        .newsletter-container1-a {
+            margin: 40px auto 20px auto;
+        }
+
+        .newsletter-container1-a img {
+            width: 36%;
+            margin: 47px auto;
+        }
+
+        .newsLetter-container-text {
+
+            font-size: 19px;
+        }
+
+        .email-warning p {
+
+            font-size: 15px;
+
+        }
+
+        .newsLetter-container-text-name {
+
+            font-size: 21px;
+        }
+
+        .newsletter-container1-email p {
+
+            font-size: 15px;
+        }
+
+        .newsletter-container1-input {
+
+            width: 62%;
+        }
+
+        .newsLetter-container-1-button {
+
+            width: 34%;
+        }
+
+        .newsLetter-container-1-button p {
+
+            font-size: 15px;
+        }
+
+
+        .newLetter-container2-items {
+            display: grid;
+        }
+
+        .newsletter-container2-left {
+            padding: 0;
+            order: 2;
+        }
+
+        .newsletter-container2-right {
+            margin: auto;
+            order: 1;
+        }
+
+        .newsletter-container2-left h1 {
+            font-size: 24px;
+            margin-bottom: 11px;
+            margin-top: 21px;
+        }
+
+        .newsletter-left {
+            padding-right: 0px;
+        }
+    }
+</style>
 
 <body>
 
@@ -35,11 +322,11 @@
                 <div class="offcanvas-menu">
                     <ul>
                         <li class="homePage"><a href="#">HOME</a></li>
-                        <li class="blogPage"><a href="#" >BLOGS</a></li>
-                        <li class="newsLetterPage"><a href="#" >NEWSLETTER</a></li>
-                        <li class="coachingPage"><a href="#" >COACHING</a></li>
-                        <li class="storePage"><a href="#" >STORE</a></li>
-                        <li class="signInPage"><a href="#" >SIGN IN</a></li>
+                        <li class="blogPage"><a href="#">BLOGS</a></li>
+                        <li class="newsLetterPage"><a href="#">NEWSLETTER</a></li>
+                        <li class="coachingPage"><a href="#">COACHING</a></li>
+                        <li class="storePage"><a href="#">STORE</a></li>
+                        <li class="signInPage"><a href="#">SIGN IN</a></li>
                     </ul>
                 </div>
 
@@ -65,7 +352,119 @@
 
         </div>
     </nav>
-    
+    <div class="newsLetter-container">
+        <div class="newsLetter-container1">
+            <div class="newsLetter-container-content">
+
+
+                <div class="newsletter-container1-a">
+                    <img src="newsletter-icon.jpg">
+                </div>
+                <div class="newsletter-container1-b">
+                    <h1>Healthier in 5 minutes? It's what we do.</h1>
+                </div>
+                <div class="newsletter-container1-c">
+                    <p class="newsLetter-container-text">Get the insider email that removes the noise and helps you make
+                        sense of what matters most to improve fitness, nutrition, and general health. </p>
+                </div>
+                <div class="newsletter-container1-email">
+                    <p class="emailAddress">Email Address</p>
+                    <input type="text" placeholder="" class="newsletter-container1-input">
+                    <p class="email-warning">Please enter a valid email address.</p>
+                    <button class="newsLetter-container-1-button">
+                        <p>Join Free</p>
+                    </button>
+                </div>
+                <div class="newsletter-container1-d">
+                    <div class="newsLetter-container1-d-left">
+                        <img class="newsletter-container1-d-img" src="newsletter-img1.png">
+                    </div>
+                    <div class="newsLetter-container1-d-right">
+                        <p class="newsLetter-container-text">
+                            When I decided to get back into the fitness game, I sought out the best and brightest
+                            experts in the field. In that search, I asked everyone from my fans to my advisors who they
+                            recommend I look at. Without fail...Born Fitness kept floating to the top.
+                        </p>
+                        <p class="newsLetter-container-text-name">Arnold Schwarzenegger </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsLetter-container2">
+            <div class="newsLetter-container-content">
+                <div class="newLetter-container2-items">
+                    <div class="newsletter-container2-left">
+                        <h1>
+                            Always Free and No Advertising
+                        </h1>
+                        <p class="content-black  newsLetter-container-text ">
+                            We won't charge you for this, ever. Also, you won't find ads in our emails. Just great info.
+                        </p>
+                    </div>
+                    <div class="newsletter-container2-right">
+                        <img src="newsletter-img2.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="newsLetter-container2">
+            <div class="newsLetter-container-content">
+                <div class="newLetter-container2-items">
+                    <div class="newsletter-container2-right newsletter-left ">
+                        <img src="newsletter-img3.png">
+                    </div>
+                    <div class="newsletter-container2-left newsletter-right">
+                        <h1>
+
+                            No Ph.D. Required
+                        </h1>
+                        <p class="content-black  newsLetter-container-text ">
+                            We make sure anyone can understand our approach to health and wellness. Why? Because you
+                            don't need all of that extra info. We want to help you take action rather than being
+                            confused.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="newsLetter-container2">
+            <div class="newsLetter-container-content">
+                <div class="newLetter-container2-items">
+                    <div class="newsletter-container2-left">
+                        <h1>
+                            Fast and Convenient
+                        </h1>
+                        <p class="content-black  newsLetter-container-text ">
+                            We want to help you take action in your busy life. That means making sure you can get
+                            everything you need fast.
+                        </p>
+                    </div>
+                    <div class="newsletter-container2-right">
+                        <img src="newsletter-img4.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="newsLetter-container1 newsLetter-container-bottom">
+            <div class="newsLetter-container-content">
+                <h1 class="newsletter-bottom-heading">Join 40,000 people reading our email every Sunday.</h1>
+                <p class="newsLetter-container-text bottom-text">
+                    If you don't like it at any point just unsubscribe.
+
+                </p>
+                <p class="term">
+                    Terms and Privacy Policy.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="footer">
 
         <div class="footer-left">

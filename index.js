@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const signUp = document.querySelector('.signup');
     const signupEmail = document.querySelector('.main-email');
-    const notValidMessage = document.querySelector('.notvalid');
+    const notValidMessage = document.querySelector('.main-notValid');
 
 
     signupEmail.addEventListener('keypress', function (event) {
@@ -272,6 +272,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     })
+    signupEmail.addEventListener('input', function() {
+        notValidMessage.style.display = "none";
+    });
     function isValidEmail(email) {
         const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         return emailPattern.test(email);
@@ -350,6 +353,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
         }
+    });
+    signInEmail.addEventListener('input', function() {
+        notValidMessage.style.display = "none";
     });
     function isValidEmail(email) {
         const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;

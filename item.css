@@ -153,6 +153,10 @@
     font-size: 21px;
     color: #1a1e24;
 }
+.item-signup{
+    margin-bottom: -8px;
+    width: 12%;
+}
 
 .sub-signUp-input-left {
     width: 50%;
@@ -223,6 +227,9 @@
 
         margin: 23px 9px;
     }
+    .item-signup {
+        width: 15%;
+      }
 
 }
 
@@ -243,6 +250,10 @@
     .sub-content2 {
         margin-top: 100px;
     }
+    .item-signup {
+       
+        width: 142px;
+      }
 
 
 }

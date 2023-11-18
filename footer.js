@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const subSearch = document.querySelector('.item-search');
     const subIcon = document.querySelector('.sub-search .fa-sharp');
     subSearch.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') { 
-            
+        if (event.key === 'Enter') {
+
             event.preventDefault();
             if (subSearch.value.trim().toLowerCase() === 'protein') {
-               
+
                 window.location.href = "protein_page.html";
                 subSearch.value = "";
             }
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subSearch.value = "";
             }
             else if (subSearch.value.trim().toLowerCase() === 'creatine') {
-            
+
                 window.location.href = "creatine.html";
                 event.preventDefault();
                 subSearch.value = "";
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 subSearch.value = "";
 
             }
-            
+
 
         }
     })
@@ -305,16 +305,37 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// items js
 
 document.addEventListener('DOMContentLoaded', function () {
+
+
     const subInput = document.querySelector('.sub-input');
     const subButton = document.querySelector('.sub-buttton');
-
+    const notValidMessage = document.querySelector('.sub-signUp .item-signup');
 
 
     subInput.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
+        if (event.key === 'Enter')  {
+            event.preventDefault();
+            const enteredEmail = subInput.value.trim();
+            if (isValidEmail(enteredEmail)) {
+               
+                console.log(subInput.value)
+                subInput.value = "";
+                notValidMessage.style.display = 'none';
+            }
+            else {
+                notValidMessage.style.display = 'block';
+             
+            }
 
+
+        }
+    })
+    subButton.addEventListener('click', function (event) {
+        const enteredEmail = subInput.value.trim();
+        if (isValidEmail(enteredEmail)) {
             event.preventDefault();
             console.log(subInput.value)
             subInput.value = "";
@@ -322,19 +343,47 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             notValidMessage.style.display = 'block';
-            event.preventDefault();
-
+            
         }
 
-    })
-    subButton.addEventListener('click', function (event) {
-
-        event.preventDefault();
-        console.log(subInput.value)
-        subInput.value = "";
-        notValidMessage.style.display = 'none';
 
     })
+    subInput.addEventListener('input', function() {
+        notValidMessage.style.display = "none";
+    });
+    function isValidEmail(email) {
+        const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return emailPattern.test(email);
+    }
+
+    // const subInput = document.querySelector('.sub-input');
+    // const subButton = document.querySelector('.sub-buttton');
+
+
+
+    // subInput.addEventListener('keypress', function (event) {
+    //     if (event.key === 'Enter') {
+
+    //         event.preventDefault();
+    //         console.log(subInput.value)
+    //         subInput.value = "";
+    //         notValidMessage.style.display = 'none';
+    //     }
+    //     else {
+    //         notValidMessage.style.display = 'block';
+    //         event.preventDefault();
+
+    //     }
+
+    // })
+    // subButton.addEventListener('click', function (event) {
+
+    //     event.preventDefault();
+    //     console.log(subInput.value)
+    //     subInput.value = "";
+    //     notValidMessage.style.display = 'none';
+
+    // })
 
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -358,4 +407,42 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Element not found. Check the class or ID used for selection.');
     }
+});
+
+
+// newsletter js
+document.addEventListener('DOMContentLoaded', function () {
+const newsLetterInput=document.querySelector('.newsletter-container1-input');
+const newsLetterButton=document.querySelector('.newsLetter-container-1-button');
+const emailWarning=document.querySelector('.email-warning');
+
+newsLetterButton.addEventListener('click',newsletterEmail);
+
+newsLetterInput.addEventListener('keypress',function(event){
+    if(event.key==='Enter'){
+        event.preventDefault();
+        newsletterEmail(event);
+    }
+})
+newsLetterInput.addEventListener('input', function() {
+    emailWarning.style.display = "none";
+});
+
+function newsletterEmail(event){
+    if(isValidEmail(newsLetterInput.value)){
+        event.preventDefault();
+        console.log(newsLetterInput.value)
+        newsLetterInput.value="";
+        emailWarning.style.display="none"; 
+    }
+    else{
+       emailWarning.style.display="block"; 
+    }
+    
+}
+    function isValidEmail(email) {
+        const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return emailPattern.test(email);
+    }
+
 });

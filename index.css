@@ -20,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
 }
 
@@ -241,6 +241,7 @@ body {
 
 .content {
     margin-top: 88px;
+    overflow-x: hidden;
 }
 
 .content1-left h1 {
@@ -266,7 +267,7 @@ body {
 .content1-left p {
     font-size: 21px;
     text-align: left;
- 
+
 }
 
 .email-section {
@@ -823,3 +824,20 @@ body {
 .content8-image1 .img-left {
     width: 85%;
 }
+
+
+
+/* main-page-email */
+.main-notValid {
+    background: black;
+    width: 54%;
+    z-index: 20;
+    position: relative;
+    margin-bottom: -54px;
+    border-radius: 5px;
+}
+.main-notValidP {
+    color: white !important;
+    padding: 9px !important;
+    font-size: 15px !important;
+    }
