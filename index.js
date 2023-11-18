@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         newFooter.style.display = 'block';
     })
 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    
+
     // search item by using main-input box
     const fitnessItems = [
         'Protein', 'Multivitamin', 'Creatine', 'Mass Gainer', 'Max Strength',
