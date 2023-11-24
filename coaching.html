@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>News Letter-Born Fitness</title>
     <link rel="icon" href="icons8-running.gif" type="image/gif">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="item.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -16,37 +16,66 @@
 
 </head>
 <style>
-  
+    body {
+        overflow-x: hidden;
+    }
 
-    
+    .newsLetter-container1 {
+        background-color: black;
+    }
+
+
+
+
+    .newsLetter-container-content {
+        width: 59%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     /* responsive */
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1000px) {
+        .newsLetter-container-content {
+            width: 90%;
+        }
+    }
 
+    @media screen and (max-width: 768px) {
+        .navigation2 {
+            margin-top: 0;
 
-       
+        }
 
+        .navigation {
 
+            width: 95%;
+            top: 0;
+        }
 
     }
 
-    @media screen and (max-width:600px) {
-
-
-       
-     
-    }
+    @media screen and (max-width:650px) {}
 </style>
 
 <body>
-    <nav class="navigation">
+
+    <nav class="navigation  navigation2">
         <div class="nav-content">
             <a href="index.html">
                 <img src="born-fitness-logo.svg" alt="fitness icon" class="born-icon">
             </a>
             <div class="right">
-
-
                 <ul class="nav-point">
                     <li class="blogPage">BLOGS</li>
                     <li class="newsLetterPage">NEWSLETTER</li>
@@ -73,7 +102,7 @@
                 </div>
                 <div class="search-icon">
                     <div class="search-container">
-                        <input type="text" placeholder="Search i.e.protein" id="search-input">
+                        <input type="text" placeholder="Search" id="search-input">
                         <button class="btn"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
                         <div class="search-suggestions">
                             <ul class="suggestion-list"></ul>
@@ -87,11 +116,67 @@
 
         </div>
     </nav>
+    <div class="newsLetter-container">
+        <div class="newsLetter-container1">
+            <div class="newsLetter-container-content">
 
 
-  
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+
+        <div class="footer-left">
+            <p class="footer-heading">
+                YOU’VE GOT QUESTIONS.
+            </p>
+            <p class="footer-left-text">
+                We Have Answers.
+            </p>
+            <span><input type="text" placeholder="Type (i.e. protein)" id="comment-box">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass footer-search"></i></button></span>
+            <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-right-item1">
+                <p class="footer-heading">SERVICES</p>
+                <p class="footer-text">Online Coaching</p>
+                <p class="footer-text">Born Fitness+</p>
+                <p class="footer-text">Fit Father Guide</p>
+                <p class="footer-text">Fat Loss Academy</p>
+                <p class="footer-text">Consulting</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">RESOURCES</p>
+                <p class="footer-text">Our Weekly Email</p>
+                <p class="footer-text">Blog</p>
+                <p class="footer-text">That’s Healthy, Right?</p>
+                <p class="footer-text">Books</p>
+                <p class="footer-text">Videos</p>
+            </div>
+            <div class="footer-right-item1">
+                <p class="footer-heading">COMPANY</p>
+                <p class="footer-text">Our Story</p>
+                <p class="footer-text">Testimonials</p>
+                <p class="footer-text">Contact Us</p>
+            </div>
+        </div>
+
+    </div>
     <div class="footer2">
         <p class="footer2-text">© 2020 Born Fitness, LLC • Privacy Policy • Terms of Use</p>
+
     </div>
 </body>
 <script src="footer.js"></script>
