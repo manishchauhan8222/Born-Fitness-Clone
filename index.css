@@ -558,8 +558,15 @@ body {
 
 .footer-left span i {
     position: absolute;
+
+    color: #555;
+    cursor: pointer;
+}
+
+.footer-left span button {
+    position: absolute;
     top: 33%;
-    right: 10px;
+    right: 19px;
     transform: translateY(-50%);
     color: #555;
     cursor: pointer;
@@ -836,8 +843,9 @@ body {
     margin-bottom: -54px;
     border-radius: 5px;
 }
+
 .main-notValidP {
     color: white !important;
     padding: 9px !important;
     font-size: 15px !important;
-    }
+}
