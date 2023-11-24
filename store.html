@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Thank You for Subscribe</title>
+    <title>Born Fitness Store</title>
     <link rel="icon" href="icons8-running.gif" type="image/gif">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="utils.css">
@@ -17,6 +17,7 @@
 </head>
 <style>
     .signup-newpage-container {
+        border-bottom: 3px solid #f4f7f9;
         width: 50%;
         margin: 39px auto;
         border-top: 8px solid #f8ff31;
@@ -38,9 +39,54 @@
         margin-bottom: 88px;
     }
 
-   
+    .store-img img {
+        cursor: pointer;
+        width: 100%;
+    }
 
-    
+
+    .store-container1 p {
+        font-size: 19px;
+        margin: 42px auto;
+    }
+
+    .store-h1 {
+        position: relative;
+        border-bottom: 11px solid #02ffd2;
+        font-size: 42px !important;
+        display: inline;
+        text-align: start;
+        cursor: pointer;
+        margin-bottom: 33px;
+    }
+
+    .store-h1:hover {
+        border-color: #f8ff31;
+
+
+    }
+
+    .store-container1 {
+        margin-bottom: 50px;
+    }
+
+    .underline-text {
+
+        border-bottom: 4px solid #02ffd2;
+        cursor: pointer;
+        font-size: 19px;
+        text-decoration: none;
+    }
+
+    .store-container1 a {
+        text-decoration: none;
+    }
+
+    .underline-text:hover {
+        border-bottom: 4px solid #f8ff31;
+    }
+
+
 
     /* responsive */
     @media screen and (max-width:768px) {
@@ -54,6 +100,24 @@
         .signup-newpage-container-content h1 {
 
             font-size: 2.625rem;
+        }
+
+
+
+        .store-h1 {
+
+            border-bottom: 6px solid #02ffd2;
+            font-size: 23px !important;
+        }
+
+        .store-container1 p {
+
+            font-size: 18px;
+            margin: 26px auto;
+        }
+
+        .underline-text {
+            font-size: 18px;
         }
 
 
@@ -78,7 +142,7 @@
             font-size: 17px;
         }
 
-     
+
     }
 </style>
 
@@ -135,11 +199,40 @@
 
     <div class="signup-newpage-container">
         <div class="signup-newpage-container-content">
-            <h1>Born Fitness Store</h1>
+            <h1 class="jumpToCoaching">Born Fitness Store</h1>
             <p class="signup-newpage-container-content-text">
-                
+
             </p>
-           
+
+            <div class="store-container1">
+              <a href="coaching.html" ><h1 class="store-h1">Born Fitness Coaching</h1></a>
+                <p>Our next enrollment for our online fitness and nutrition coaching is September 7, 2023. We only have
+                    a few spots remaining so find out more by clicking the image below.</p>
+                <div class="store-img">
+                    <img src="store-img1.png" class="jumpToCoaching">
+                </div>
+            </div>
+            <div class="store-container1">
+                <h1 class="store-h1">Fit Father Guide</h1>
+                <p>Created by Adam Bornstein, father of 2 boys and founder of Born Fitness. The Fit Father Guide is a
+                    sustainable approach to eating healthy and staying fit with a very business schedule.</p>
+                <div class="store-img">
+                    <img src="store-img2.png">
+                </div>
+            </div>
+            <div class="store-container1">
+                <h1 class="store-h1">Fat Loss Academy</h1>
+                <p>Our flagship 12-week fat loss course is 100% digital and can be done from anywhere in the world.</p>
+                <div class="store-img">
+                    <img src="store-img3.png">
+                </div>
+            </div>
+            <div class="store-container1">
+                <p>If you have any questions just email us at<a href="mailto:info@bornfitness.com">
+                        <span class='underline-text'>info@bornfitness.com </span>
+                    </a>.</span>
+
+            </div>
 
         </div>
     </div>
@@ -147,7 +240,10 @@
         <p class="footer2-text">© 2020 Born Fitness, LLC • Privacy Policy • Terms of Use</p>
     </div>
 </body>
+
 <script src="footer.js"></script>
 <script src="index.js"></script>
+
+
 
 </html>

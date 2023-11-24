@@ -10,11 +10,14 @@ document.addEventListener('DOMContentLoaded', function () {
         newFooter.style.display = 'block';
     })
 
+
+    
+
 });
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    
+
 
     // search item by using main-input box
     const fitnessItems = [
@@ -302,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-// js for small screen navigation
+    // js for small screen navigation
 
     function closeOffCanvasMenu() {
         const offcanvasMenu = document.querySelector('.offcanvas-menu');
@@ -420,4 +423,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+
+
 
