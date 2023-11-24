@@ -39,7 +39,8 @@
     padding: 18px;
 
 }
-.fa-sharp{
+
+.fa-sharp {
     cursor: pointer;
 }
 
@@ -153,7 +154,8 @@
     font-size: 21px;
     color: #1a1e24;
 }
-.item-signup{
+
+.item-signup {
     margin-bottom: -8px;
     width: 12%;
 }
@@ -183,10 +185,11 @@
     font-weight: 600;
 
 }
-.sub-search  span  button{
+
+.sub-search span button {
     background: none;
     border: none;
-    }
+}
 
 
 /* resposive */
@@ -227,9 +230,14 @@
 
         margin: 23px 9px;
     }
+
     .item-signup {
         width: 15%;
-      }
+    }
+
+    .sub-signUp-text h1 {
+        font-size: 38px;
+    }
 
 }
 
@@ -243,26 +251,21 @@
         font-size: 28px;
     }
 
-    .navigation2 {
-        margin-top: -100px;
-    }
+    
 
     .sub-content2 {
         margin-top: 100px;
     }
+
     .item-signup {
-       
+
         width: 142px;
-      }
-
-
-}
-
-@media screen and (max-width:1200px) {
-    .sub-signUp-text h1 {
-        font-size: 38px;
     }
+
+
 }
+
+
 
 @media screen and (max-width:600px) {
 
@@ -355,6 +358,7 @@
     .sub-signUp-input-right p {
         font-size: 12px;
     }
+    
 }
 
 @media screen and (max-width:300px) {

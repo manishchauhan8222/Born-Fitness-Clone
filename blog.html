@@ -8,6 +8,7 @@
     <title>Born Fitness&nbsp;— The Rules of Fitness Reborn</title>
     <link rel="icon" href="icons8-running.gif" type="image/gif">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="item.css">
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,6 +17,9 @@
 
 </head>
 <style>
+    .content1{
+        background: none;
+    }
     .content1-left-text {
         margin-top: 40px;
     }
@@ -28,12 +32,180 @@
         margin-top: 50px !important;
     }
 
+    .blog-content2 {
+        padding: 39px;
+
+
+    }
+
+    .blog-content4 {
+        padding: 39px;
+
+
+    }
+
+    .blog-content2-text {
+        font-size: 19px;
+    }
+
+    .sub-container {
+
+        width: 100%;
+    }
+
+    .sub-content-item {
+        display: flex;
+    }
+
+    .sub-content-left-img img {
+
+        width: 85%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sub-content-middle {
+        margin: 0 10px;
+    }
+
+    .blog-content3 ul li {
+        font-size: 18px;
+        color: #1a1e24;
+        list-style: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease, height 0.3s ease;
+        cursor: pointer;
+    }
+
+    .blog-content3 ul li:hover {
+        border-bottom: 2px solid #02ffd2;
+        transition-delay: 0.1s;
+    }
+
+    .blog-content3 ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .blog-content3 {
+        margin: 31px 110px auto 110px;
+    }
+
+    .blog-content4 {
+        margin: 31px 110px auto 110px;
+    }
+
+    .blog-content4-img {
+        text-align: center;
+    }
+
+    .blog-content4 .sub-content-right {
+        width: 100%;
+    }
+
+    .blog-content4-part2 {
+        margin: 115px auto;
+        border: 3px solid #f4f6f9 !important;
+    }
+
+    .blog-content4-part1 {
+        border: 3px solid #f4f6f9 !important;
+    }
+
+    .blog-content4-part3 {
+        border: 3px solid #f4f6f9 !important;
+    }
+
+    .blog-content4-button {
+        text-align: center;
+        margin-top: 87px;
+    }
+
+    .blog-content4-button button {
+        background-color: #f8ff31;
+        color: #1a1e24;
+        border: none;
+        cursor: pointer;
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        border: 0;
+        border-radius: 0;
+        font-size: 24px;
+        font-size: 21px;
+        cursor: pointer;
+        font-weight: 700;
+        font-style: italic;
+        box-shadow: none !important;
+        padding: 10px;
+    }
+
+    .blog-content4-heading h1 {
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    .blog-content4-heading {
+        margin-bottom: 27px;
+    }
+
+    @media screen and (max-width:1200px) {
+        .sub-content-left {
+            flex: 1 0 45%;
+        }
+
+        .sub-content-right {
+
+            margin-top: 72px;
+        }
+
+        .sub-content-item {
+            flex-flow: 2;
+            flex-wrap: wrap;
+        }
+
+        .sub-content-middle {
+            flex: 1 0 45%;
+        }
+
+        .sub-content-right {
+            margin-top: 0px;
+        }
+    }
+
     @media screen and (max-width:1000px) {
         .blog-content1-container {
             margin: 0px !important;
         }
 
+        .blog-content2 {
+            margin: 0px !important;
+        }
 
+
+        .sub-content-left-img img {
+            width: 100%;
+
+        }
+
+    }
+
+    @media screen and (max-width:900px) {
+        .blog-content3 {
+            margin: 31px 0;
+        }
+
+        .blog-content4 {
+            margin: 31px 0;
+        }
+
+        .blog-content3 ul li {
+            margin-bottom: 10px;
+
+        }
+
+        .blog-content3 ul {
+            display: grid;
+        }
     }
 
     @media screen and (min-width:600px) {
@@ -49,11 +221,49 @@
         .blog-img1 {
             width: 40vw !important;
         }
+
+        .blog-content2 {
+
+            margin: 0px 110px 0px 110px;
+
+        }
+
+
     }
 
     @media screen and (max-width:600px) {
         .content1-left {
             order: 2;
+        }
+
+        .sub-content-item {
+
+            display: grid;
+        }
+
+        .sub-content-middle {
+            margin-bottom: 53px;
+        }
+
+        .blog-content3 ul li {
+
+            font-size: 17px;
+        }
+
+        .blog-content4-part2 {
+
+            margin: 70px auto;
+        }
+
+
+        .blog-content4-button button {
+
+            font-size: 19px;
+        }
+
+        .blog-content4-heading h1 {
+            font-size: 30px;
+
         }
     }
 </style>
@@ -107,38 +317,196 @@
 
         </div>
     </nav>
+    <div class="newsLetter-conatiner">
 
-    <div class="content1 blog-content1-container">
-        <div class="content1-left">
-            <h1 class="blog-h1">Stop Guessing And Stressing About How To Be Healthy</h1>
 
-            <p class="content1-left-text">Get our science-backed tips every week on how to live a healthier life.
-            </p>
+        <div class="content1 blog-content1-container">
+            <div class="content1-left">
+                <h1 class="blog-h1">Stop Guessing And Stressing About How To Be Healthy</h1>
 
-            <div class="email-section">
-                <input type="text" placeholder="Email Address" class="main-email">
-                <div class="signup-container">
-                    <div class="notvalid main-notValid">
-                        <p class="main-notValidP">Enter valid email</p>
+                <p class="content1-left-text">Get our science-backed tips every week on how to live a healthier life.
+                </p>
+
+                <div class="email-section">
+                    <input type="text" placeholder="Email Address" class="main-email">
+                    <div class="signup-container">
+                        <div class="notvalid main-notValid">
+                            <p class="main-notValidP">Enter valid email</p>
+                        </div>
+                        <div>
+                            <button class="signup">
+                                <p>SIGN UP</p>
+                            </button>
+                        </div>
                     </div>
-                    <div>
-                        <button class="signup">
-                            <p>SIGN UP</p>
-                        </button>
-                    </div>
+
                 </div>
+
+            </div>
+            <div class="content1-right">
+                <img src="blog-img1.webp" class="blog-img1">
 
             </div>
 
         </div>
-        <div class="content1-right">
-            <img src="blog-img1.webp" class="blog-img1">
+        <div class="blog-content2">
+            <p class="blog-content2-text">
+                You don't need more confusing information. We've been the trusted voice in fitness and nutrition for
+                nearly 15 years. Our job is making it easier for you to take your fitness and nutrition to the next
+                level - without all the stress, complication, and necessary cost.f
+            </p>
+        </div>
 
+        <div class="blog-content2">
+            <div class="sub-container">
+
+                <div class="sub-content-item">
+                    <div class="sub-content-left">
+                        <div class="sub-content-left-img">
+                            <img src="blog-img2.webp">
+                        </div>
+                        <div class="sub-content-tags">
+
+                            <div class="sub-content-tag">NUTRITION
+                            </div>
+                        </div>
+                        <div class="sub-content-text">
+                            <h1>Is A Calorie Really A Calorie?</h1>
+                            <p>All calories are not created equal. To understand why we take a look at the thermic
+                                effect of food and the domino effect of eating more protein.</p>
+                        </div>
+                        <div class="sub-content-button">
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                    <div class="sub-content-middle">
+                        <div class="sub-content-left-img">
+                            <img src="blog-img3.png">
+                        </div>
+                        <div class="sub-content-tags">
+
+                            <div class="sub-content-tag">FITNESS</div>
+
+                        </div>
+                        <div class="sub-content-text">
+                            <h1>The Right Way to Squat (And Solve The “Butt Wink” Issue)</h1>
+                            <p>Let's clear something up: for the vast majority of us, a butt wink while squatting under
+                                load isn't a good idea, but exceptions exist.</p>
+                        </div>
+                        <div class="sub-content-button">
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                    <div class="sub-content-right">
+                        <div class="sub-content-left-img">
+                            <img src="blog-img4.webp">
+                        </div>
+                        <div class="sub-content-tags">
+
+                            <div class="sub-content-tag">FITNESS</div>
+
+                        </div>
+                        <div class="sub-content-text">
+                            <h1>Exercise We Love: The Kettlebell Goblet Clean</h1>
+                            <p>Train explosive leg drive using the kettlebell goblet clean. Why? It’s safer to execute
+                                and nicer on your wrists than the alternatives.</p>
+                        </div>
+                        <div class="sub-content-button">
+                            <span>READ MORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-content3">
+            <ul>
+                <li>LATEST</li>
+                <li>BORN FITNESS+</li>
+                <li>FITNESS</li>
+                <li>NUTRITION</li>
+                <li>RECIPES</li>
+                <li>SUCCESS STORIES</li>
+                <li>WELLNESS</li>
+            </ul>
+        </div>
+
+        <div class="blog-content4">
+            <div class="sub-content-right">
+                <div class="blog-content4-heading">
+                    <h1>Latest</h1>
+                </div>
+                <div class="sub-content-left-img blog-content4-img"">
+                    <img src=" blog-img5.jpg">
+                </div>
+            </div>
+            <div class="blog-content4-part1">
+
+                <div class="sub-content-tags">
+
+                    <div class="sub-content-tag">WELLNESS</div>
+
+                </div>
+                <div class="sub-content-text">
+                    <h1>Sentenced To Life</h1>
+                    <p>I looked at my dad. Then down at my phone. 10:32 pm. July 21. 2023. My dad was gone. On Friday
+                        night, I watched my father — my Superman — take his final breath. It was a moment of peace for a
+                        man at war for three years. My dad was diagnosed with terminal brain […]</p>
+                </div>
+                <div class="sub-content-button">
+                    <span>READ MORE</span>
+                </div>
+            </div>
+            <div class="blog-content4-part2">
+
+
+                <div class="sub-content-tags">
+
+                    <div class="sub-content-tag">WELLNESS</div>
+
+                </div>
+                <div class="sub-content-text">
+                    <h1>How To Fix Muscle Imbalances</h1>
+                    <p>Early in my career, I’d spend a significant amount of time trying to “correct” a client’s muscle
+                        imbalances. These were deficits or patterns I identified during a hands-on assessment at the
+                        gym. For some clients (mainly those dealing with chronic pain), this was the right call. But,
+                        for the rest, it meant that we didn’t […]</p>
+                </div>
+                <div class="sub-content-button">
+                    <span>READ MORE</span>
+                </div>
+            </div>
+            <div class="blog-content4-part3">
+
+
+                <div class="sub-content-tags">
+
+                    <div class="sub-content-tag">WELLNESS</div>
+
+                </div>
+                <div class="sub-content-text">
+                    <h1>
+                        How To Have a Great Workout, Every Workout
+                    </h1>
+                    <p>Some weeks, you might not be feeling your workouts. It happens to all of us. Whether you’ve got a
+                        lot going on at work or sleeping terribly, you will be lagging some days. Here’s the key: It’s
+                        not about pushing the limits; it’s about learning how to have a great workout every time, no
+                        matter […]</p>
+                </div>
+                <div class="sub-content-button">
+                    <span>READ MORE</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="blog-content4-button">
+            <button>
+                MORE ARTICLES
+            </button>
         </div>
 
     </div>
-
-
     <div class="footer">
 
         <div class="footer-left">
