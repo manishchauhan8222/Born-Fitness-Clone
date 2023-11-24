@@ -558,7 +558,8 @@ body {
 
 .footer-left span i {
     position: absolute;
-
+    right: -10px;
+    top: -1px;
     color: #555;
     cursor: pointer;
 }
