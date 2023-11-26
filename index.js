@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-    
+
 
 });
 
@@ -424,6 +424,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+// js for coaching page
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const coaching3Texts = document.querySelectorAll('.coaching3-text');
+    const coaching3HiddenTexts = document.querySelectorAll('.coaching3-hidden-text');
+
+    coaching3Texts.forEach(function (text, index) {
+        text.addEventListener('click', function (event) {
+            event.preventDefault();
+            const clickedTextHiddenText = coaching3HiddenTexts[index];
+            toggleHiddenText(clickedTextHiddenText);
+        });
+    });
+
+    function toggleHiddenText(hiddenText) {
+        if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+            hiddenText.style.display = 'block';
+        } else {
+            hiddenText.style.display = 'none';
+        }
+    }
+});
 

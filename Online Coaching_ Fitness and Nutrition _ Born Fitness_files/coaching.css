@@ -1,0 +1,75 @@
+/*testimonials*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400i');
+.bf-testimonial {
+	max-width:1000px;
+	margin:40px auto;
+	font-size:1rem;
+	text-align:left;
+}
+.bf-testimonial-images img {
+	width:49%;
+	height:auto;
+	box-sizing:border-box;
+	padding:5px;
+	margin:0;
+	border:1px #ccc solid;
+}
+img.bf-testimonial-before {
+	margin-right:2%;
+}
+.bf-testimonial-images img.bf-testimonial-both {
+	width:100%;
+}
+.bf-testimonial-text {
+	padding:20px 10px 10px 10px;
+}
+.bf-testimonial-text p {
+	margin:0 0 0.5em 0;
+}
+.bf-testimonial-name {
+	color:#666;
+	margin-left:10px;
+	font-style:italic;
+}
+.clear { clear:both !important; }
+
+@media only all and (min-width: 768px) {
+	.bf-testimonial-images, .bf-testimonial-text {
+		width:50%;
+		float:left;
+		box-sizing:border-box;
+		margin:0;
+	}
+	.bf-testimonial-text {
+		padding-left:40px;
+	}
+}
+@media only all and (max-width: 767px) {
+	.bf-testimonial {
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.bf-testimonial-images {
+		padding:0 5px;
+	}
+	.bf-testimonial-text {
+		max-width:450px;
+		margin:0 auto;
+		padding:20px 10px 0 10px;
+	}
+}
+/*edit to application form*/
+@media only all and (min-width:768px) {
+	.gravityform .btn { margin-top:20px; }
+}
+.coaching-final-section section.gravityform {
+	padding-bottom:0;
+}
+@media only all and (max-width:767px) {
+	.coaching-disclaimer br { display:none; }
+}
+/*fix for copyright size*/
+footer.site-copyright, footer.site-copyright p, footer.site-copyright a {
+  font-size: 14px;
+  font-size: 0.875rem;
+}

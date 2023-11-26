@@ -769,7 +769,12 @@ body {
     padding: 12px 28px;
     font-style: italic;
     cursor: pointer;
+    display: inline-block;
 }
+.content7-inner  a{
+    display: inherit;
+    text-decoration: navajowhite;
+    }
 
 .content7-button p {
     margin: auto;
